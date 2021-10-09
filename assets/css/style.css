@@ -1,1 +1,34 @@
 
+body {
+    background-color: white;
+    font-family: "Roboto", sans-serif;
+    color: #00c2cb;
+    text-align: center;
+}
+
+.heading {
+    transform: scale(0.5);   
+    margin: 0;
+    padding: 5px;
+}
+
+.heading>img {
+    padding:0;
+    margin: 0;
+}
+
+.question-area {
+    background-color: #341b07;
+    box-sizing: border-box;
+    width: 50%;
+    height: 50vh;
+    max-height: 400px;
+    max-width: 800px;
+    margin-left: 25vw;
+    margin-top: 0em;
+}
+
+.question {
+    font-family: "Major Mono Display", sans-serif;
+    text-align: left;
+}
