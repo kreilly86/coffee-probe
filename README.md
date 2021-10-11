@@ -28,16 +28,32 @@ As a user I want to:
 
 <strong>Existing Features</strong>
 <br>
-### LOGO
+
+#### LOGO
+<br>
+
+#### BUTTONS
 <br>
 
 
-### QUESTION BOX
+#### QUESTION BOX
 <br>
 
 
-### SCORE SECTION
+#### SCORE SECTION
 <br>
+<br>
+
+## CREDITS
+
+### CODE
+
+https://www.w3schools.com/css/css3_buttons.asp
+
+### CONTENT
+
+ -Contrast Grid 
+ -https://color.adobe.com/create/color-wheel
 
 
 
