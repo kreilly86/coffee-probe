@@ -84,22 +84,38 @@ body {
     color: black;
 }
 
-.easy-btn {
-    background-color: #D99923;
-    border: none;
-    color: white;
-  }
-
-.intermediate-btn {
-    background-color: #2ED3D9;
-    border: none;
-    color: white;
+.levels a {
+    margin-top: 0px;
+    margin-bottom: 50px; 
+    margin-right: 15px;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    border: 2px solid #0B454D;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.expert-btn {
+.easy {
+    background-color: white;
+    padding: 0;
+  }
+
+.easy:hover {
+    background-color: #D99923;
+}
+
+.intermediate {
+    background-color: #2ED3D9;
+    border: none;
+    color: black;
+}
+
+.expert {
     background-color: #003E8C;
     border: none;
-    color: white;
+    color: black;
 
 }
 
@@ -115,6 +131,28 @@ body {
     margin-left: 25vw;
     text-align: left;
    
+}
+
+.easy-btn {
+    background-color: white;
+    padding: 0;
+  }
+
+.easy-btn:hover {
+    background-color: #D99923;
+}
+
+.intermediate-btn {
+    background-color: #2ED3D9;
+    border: none;
+    color: black;
+}
+
+.expert-btn {
+    background-color: #003E8C;
+    border: none;
+    color: black;
+
 }
 
 .question {
