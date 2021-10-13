@@ -10,17 +10,43 @@ body {
     padding: 0;
 }
 
-.intro-container {
-    font-family: "Major Mono Display", sans-serif;
-    margin-bottom: 75px;;
-}
-
 .heading > img {
     transform: scale(0.75);
     max-width: 500px;
     max-height: 500px;
     padding: 0;
     margin: 0;
+}
+
+.intro-container {
+    font-family: "Major Mono Display", sans-serif;
+    margin-bottom: 75px;
+    background-color: white;
+    color: black;
+    border: 4px solid #0B454D;
+    padding: 25px;
+    box-sizing: border-box;
+    width: 50vw;
+    height: 50vh;
+    max-height: 400px;
+    max-width: 800px;
+    margin-left: 25vw;
+    text-align: center;
+}
+
+#begin a {
+    color: #D99923;
+    background-color: #0B454D;
+    text-decoration: none;
+    margin-top: 0px;
+    margin-bottom: 50px; 
+    margin-right: 15px;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border: 2px solid blue;
+    box-shadow:  0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .levels > button {
@@ -34,6 +60,28 @@ body {
     font-size: 16px;
     border: 2px solid #0B454D;
     box-shadow:  0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.levels-container {
+    background-color: white;
+    color: black;
+    border: 4px solid #0B454D;
+    padding: 25px;
+    box-sizing: border-box;
+    width: 50vw;
+    height: 50vh;
+    max-height: 400px;
+    max-width: 800px;
+    margin-left: 25vw;
+    margin-bottom: 75px;
+    text-align: center;
+}
+
+.levels-container > h1 {
+    font-family: "Major Mono Display", sans-serif;
+    margin-bottom: 75px;
+    background-color: white;
+    color: black;
 }
 
 .easy-btn {
@@ -53,20 +101,6 @@ body {
     border: none;
     color: white;
 
-}
-
-.intro-container {
-    background-color: white;
-    color: #D96318;
-    border: 4px solid #0B454D;
-    padding: 25px;
-    box-sizing: flex;
-    width: 50vw;
-    height: 50vh;
-    max-height: 400px;
-    max-width: 800px;
-    margin-left: 25vw;
-    text-align: center;
 }
 
 .main-container {
