@@ -58,7 +58,7 @@ body {
     display: inline-block;
     text-decoration: none;
     font-size: 16px;
-    border: 2px solid #0B454D;
+    border: 2px solid #114B5F;
     box-shadow:  0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
@@ -105,7 +105,7 @@ body {
   }
 
 .easy:hover {
-    background-color: white ;
+    background-color: black ;
     color: #C2A83E;
 }
 
@@ -115,7 +115,7 @@ body {
 }
 
 .intermediate:hover {
-    background-color: white;
+    background-color: black;
     color: #3AAFB9;
 }
 
@@ -125,13 +125,14 @@ body {
 }
 
 .expert:hover {
-    background-color: white;
+    background-color: black;
     color: #9F9AA4;
 }
 
 .main-container {
     background-color: white;
-    border: 4px solid #0B454D;
+    color: #114B5F;
+    border: 1px solid #114B5F;
     padding: 25px;
     box-sizing: border-box;
     width: 50vw;
@@ -142,48 +143,23 @@ body {
     text-align: left;
 }
 
-.main-container btn {
-    font-size: 20px;
-}
-
-.easy-btn {
-    background-color: white;
-    padding: 0;
-    font-family: "Poppins", sans-serif;
-  }
-
-.easy-btn:hover {
-    background-color: #D99923;
-}
-
-.intermediate-btn {
-    font-family: "Poppins", sans-serif;
-    background-color: #2ED3D9;
-    border: none;
+.answers {
     color: black;
-}
-
-.expert-btn {
-    font-family: "Poppins", sans-serif;
-    background-color: #003E8C;
-    border: none;
-    color: black;
-
 }
 
 .question {
     padding: 5px;
-    color: #D99923;
+    color: #114B5F;
     font-family: "Major Mono Display", sans-serif;
     font-weight: 800;
     text-align: left;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
 }
 
 .scores {
     display: inline-block;
     font-size: 1.2rem;
-    color: #0B454D;
+    color: black;
     padding: 10px;
 }
 
