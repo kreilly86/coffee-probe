@@ -154,6 +154,10 @@ body {
     margin: 25px;
 }
 
+.answers p:hover {
+    background-color: #c2a83e;
+    color: black;
+}
 .question {
     padding: 5px;
     color: #114B5F;
