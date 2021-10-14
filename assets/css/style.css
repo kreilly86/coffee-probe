@@ -10,11 +10,8 @@ body {
 }
 
 .heading > img {
-    transform: scale(0.75);
-    max-width: 500px;
-    max-height: 500px;
     padding: 0;
-    margin: 0;
+    margin: 25px;
 }
 
 .intro-container {
