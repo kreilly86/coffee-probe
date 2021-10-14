@@ -11,7 +11,7 @@ body {
 
 .heading > img {
     padding: 0;
-    margin: 25px;
+    margin: 15px;
 }
 
 .intro-container {
@@ -144,6 +144,10 @@ body {
     color: black;
 }
 
+.answers p {
+    margin: 25px;
+}
+
 .question {
     padding: 5px;
     color: #114B5F;
@@ -160,6 +164,20 @@ body {
     padding: 10px;
 }
 
+#progress-bar {
+    width: 50vw;
+    background-color: #9f9aa4;
+    margin-left: 25vw;
+    margin-bottom: 5px;
+}
+
+#my-progress {
+    width: 10%;
+    height: 25px;
+    background-color: #114B5F;
+    text-align: center;
+    color: white;
+}
 #correct {
     color: green;
 }
