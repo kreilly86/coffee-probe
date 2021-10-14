@@ -9,6 +9,12 @@ body {
     padding: 0;
 }
 
+.home-nav {
+    display: flex;
+    align-items: center;
+    margin: 25px;
+}
+
 .heading > img {
     padding: 0;
     margin: 15px;
