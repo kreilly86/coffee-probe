@@ -15,7 +15,7 @@
     <title>Coffee Probe</title>
 </head>
 <body>
-    <div class="home-container">
+    <div class="main-container">
         <header class="heading"> 
             <div class="home-nav">
             <a href="index.html"><img src="assets/images/coffee-beans.png" alt= "coffee beans"></a>
@@ -31,14 +31,32 @@
         <h3>Test your coffee knowledge</h3>
         <br>
         <br>
-        <br>
+        <script src="assets/js/script.js"></script>
+
             <div id="begin">
-               <a href="levels.html">LET'S BEGIN!!</a>
+               <a id="begin-btn"  onclick="userInput()">LET'S BEGIN!!</a>
            </div>
+           <br> 
+           <br>
+    </div>
+
+    <div class="form-popup" id="userInput">
+        <form action="/action_page.php" class="form-container">
+            <h1>Enter your details</h1>
+        
+            <label for="Name"><b>Name</b></label>
+            <input type="text" placeholder="Enter name" name="name" required>
+        
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Enter email" name="email" required>
+        
+            <button type="submit" class="btn">Submit</button>
+          </form>
+
     </div>
 
 </div>
     
-    <script src="assets/js/script.js"></script>
+    
 </body>
 </html>
