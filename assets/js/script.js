@@ -4,109 +4,104 @@ function openForm() {
     document.getElementById("userInput").style.display ="block";
   }
 
-// Quiz seciton
+// Quiz section
+const quiz = document.getElementById("quiz");
+const question = document.getElementById("question");
 
-function buildQuiz(){}
+const choiceA = document.getElementById('a');
+const choiceB = document.getElementById('b');
+const choiceC = document.getElementById('c');
 
-function showResults(){}
-
-// display quiz right away
-buildQuiz();
-
-// on submit, show results
-submitButton.addEventListener('click', showResults);
+const scoreContainer = document.getElementById('scoreContainer');
 
 // questions
 
-const myQuestions = [
+let questions = [
   {
     question: "What is a Latte?",
-    answers: {
-      a: "Espresso lengthened with water",
-      b: "A shot of Espresso",
-      c: "A single or double shot of espresso (1/3 of your drink), 2/3 of your drink is steamed milk with a small layer of frothed milk on top"
-    },
-    correctAnswer: "c"
-  },
+      choiceA: "a. Espresso lengthened with water",
+      choiceB: "b. A shot of Espresso",
+      choiceC: "c. A single or double shot of espresso (1/3 of your drink), 2/3 of your drink is steamed milk with a small layer of frothed milk on top",
+      correctAnswer: "c"
+    },  
   {
     question: "What stimulant exists in coffee?",
-    answers: {
-      a: "Caffeine",
-      b: "Nicotine",
-      c: "Ginseng"
+      choiceA: "a. Caffeine",
+      choiceB: "b. Nicotine",
+      choiceC: "c. Ginseng", 
+      correctAnswer: "a"
     },
-    correctAnswer: "a"
-  },
   {
     question: "Which of these can be used to brew coffee?",
-    answers: {
-      a: "A pot",
-      b: "A grinder",
-      c: "A French Press",
+      choiceA: "a.A pot",
+      choiceB: "b.A grinder",
+      choiceC: "c.A French Press",
+      correctAnswer: "c"
     },
-    correctAnswer: "c"
-  },
   {
     question: "Which country is well known for producing coffee?",
-    answers: {
-      a: "Ireland",
-      b: "Brazil",
-      c: "Iceland",
+      choiceA: "a.Ireland",
+      choiceB: "b.Brazil",
+      choiceC: "c.Iceland",
+      correctAnswer: "b"
     },
-    correctAnswer: "b"
-  },
   {
     question: "What is the measurement of espresso known as?",
-    answers: {
-      a: "A basket",
-      b: "A bag",
-      c: "A shot",
+      choiceA: "a.A basket",
+      choiceB: "b.A bag",
+      choiceC: "c.A shot",
+      correctAnswer: "c"
     },
-    correctAnswer: "c"
-  },
   {
     question: "What name is given to someone who makes and serves coffee to customers?",
-    answers: {
-      a: "A barista",
-      b: "A brewer",
-      c: "A baker"
+      choiceA: "a.A barista",
+      choiceB: "b.A brewer",
+      choiceC: "c.A baker",
+      correctAnswer: "a"
     },
-    correctAnswer: "a"
-  },
   {
     question: "What is the artwork placed on top of coffee drinks with steamed milk known by?",
-    answers: {
-      a: "Marble effect",
-      b: "Milk Art",
-      c: "Latte Art"
-    },
-    correctAnswer: "c"
-  },
+      choiceA: "a.Marble effect",
+      choiceB: "b.Milk Art",
+      choiceC: "c.Latte Art",
+      correctAnswer: "c"
+  },  
   {
     question: "What form does coffee need to exist in to brew with?",
-    answers: {
-      a: "Ground",
-      b: "Wholebean",
-      c: "Green",
+      choiceA: "a.Ground",
+      choiceB: "b.Wholebean",
+      choiceC: "c.Green",
+      correctAnswer: "a"
     },
-    correctAnswer: "a"
-  },
-  {
+  { 
     question: "What effect is coffee known to have on your body?",
-    answers: {
-      a: "Helps you to fall asleep",
-      b: "Causes you to feel more alert",
-      c: "Helps with headache symptoms",
+      choiceA: "a.Helps you to fall asleep",
+      choiceB: "b.Causes you to feel more alert",
+      choiceC: "c.Helps with headache symptoms",
+      correctAnswer: "b"
     },
-    correctAnswer: "b"
-  },
   {
     question: "Which of these is not a coffee drink?",
-    answers: {
-      a: "Espresso",
-      b: "Cappuccino",
-      c: "Matcha Latte",
-    },
-    correctAnswer: "c"
+      choiceA: "a.Espresso",
+      choiceB: "b.Cappuccino",
+      choiceC: "c.Matcha Latte",
+      correctAnswer: "c"
+    },  
+  ];
+
+  let lastQuestionIndex = questions.length -1;
+  let runningQuestionIndex = 0;
+
+  function renderQuestion () {
+      let q = questions[runningQuestionIndex];
+      question.innerHTML = "<p>" + q.question+ "</p>";
+      choiceA.innerHTML = q.choiceA;
+      choiceB.innerHTML = q.choiceB;
+      choiceC.innerHTML = q.choiceC;
   }
-];
+
+  runningQuestionIndex = 0;
+  renderQuestion();
+
+  runningQuestionIndex++
+  renderQuestion();
