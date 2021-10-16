@@ -38,6 +38,7 @@ body {
     justify-content: center;
     max-height: fit-content;
     margin-bottom: 75px;
+    z-index: 4;
 }
 
 #begin a {
@@ -59,24 +60,25 @@ body {
 .form-popup {
     display: none;
     position: fixed;
-    bottom: 0;
-    right: 15px;
     border: 3px solid #f1f1f1;
-    z-index: 9;
+    z-index: 5;
+    justify-content: center;
+    margin-top: 275px;
   }
 
   /* Add styles to the form container */
 .form-container {
-    max-width: 300px;
+    width: 400px;
+    height: 375px;
     padding: 10px;
-    background-color: white;
+    background-color: rgba(159, 154, 164,0.9);
   }
   
   /* Full-width input fields */
   .form-container input[type=text], .form-container input[type=email] {
-    width: 100%;
+    width: 70%;
     padding: 15px;
-    margin: 5px 0 22px 0;
+    margin: 25px 0 25px 0;
     border: none;
     background: #f1f1f1;
   }
@@ -88,14 +90,14 @@ body {
   }
 
   /* Set a style for the submit button */
-.form-container.btn {
+.form-container .btn {
     background-color: #114b5f;
     color: white;
-    padding: 16px 20px;
+    padding: 15px;
     border: none;
     cursor: pointer;
-    width: 100%;
-    margin-bottom:10px;
+    width: 70%;
+    margin: 25px 0 5px 25px;
     opacity: 0.8;
   }
 
