@@ -94,14 +94,37 @@ let questions = [
 
   function renderQuestion () {
       let q = questions[runningQuestionIndex];
-      question.innerHTML = "<p>" + q.question+ "</p>";
+      question.innerHTML = "<p>" + q.question + "</p>";
       choiceA.innerHTML = q.choiceA;
       choiceB.innerHTML = q.choiceB;
       choiceC.innerHTML = q.choiceC;
   }
+ runningQuestionIndex = 0;
+ renderQuestion()
+ 
+ runningQuestionIndex ++
+ renderQuestion()
 
-  runningQuestionIndex = 0;
-  renderQuestion();
+// gets the current score from the DOM and increment by 1
+    function answerIsCorrect() {
+        document.getElementById(runningQuestionIndex)= parseInt(document.getElementById("correct").innerText);
+         document.getElementById("correct").innerText = ++runningQuestionIndex;
+    }
 
-  runningQuestionIndex++
-  renderQuestion();
+    function answerIsIncorrect() {
+      document.getElementById(runningQuestionIndex)= parseInt(document.getElementById("incorrect").innerText);
+      document.getElementById("incorrect").innerText = ++runningQuestionIndex;
+    }
+
+ /* function checkAnswer(answer) {
+    if (questions[runningQuestionIndex].correctAnswer) == answer {
+          answerIsCorrect();
+        } else {
+          answerIsIncorrect();
+        }
+          else if (runningQuestionIndex < lastQuestionIndex) {
+            runningQuestionIndex ++;
+            renderQuestion();
+        }
+   }
+   */

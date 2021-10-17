@@ -41,7 +41,7 @@ body {
     z-index: 4;
 }
 
-#begin a {
+#begin-btn {
     color: black;
     background-color: #C2A83E;
     font-family: "Poppins", sans-serif;
@@ -180,7 +180,6 @@ body {
 }
 
 #progress-bar {
-    flex: 3;
     width: 54%;
     background-color: #9f9aa4;
     margin-bottom: 10px;
@@ -195,14 +194,15 @@ body {
 }
 
 #quiz {
-    flex:4;
+    flex:3;
     background-color: white;
     color: #114B5F;
     border: 1px solid #114B5F;
     padding: 25px;
     width: 50%;
-    height: fit-content;
+    height: 800px;
     text-align: left;
+    margin-bottom: 75px;
 }
 
 #question {
@@ -224,20 +224,16 @@ body {
     margin: 25px 0 5px 25px;
 }
 
-.answer{
+.answer {
     color: black;
     margin: 25px;
 }
-
 
 .answer:hover {
     background-color: #c2a83e;
     color: black;
 }
 
-.score-area{
-    flex: 5;
-}
 .scores {
     display: inline-block;
     font-size: 1.2rem;

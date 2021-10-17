@@ -23,26 +23,21 @@
     </div>
 
     <div id="quiz">
-     <div id="question"><p></p></div>
+     <div id="question"><p> </p>
+    </div>
 
      <div id="answers">
-        <div class="answer" id="a" onclick="checkAnswer('a')">a.</div>
-        <div class="answer" id="b" onclick="checkAnswer('b')">b.<div>
-        <div class="answer" id="c" onclick="checkAnswer('c')">c.</div>
+        <div class="answer" id="a" onclick="checkAnswer('a')"></div>
+        <div class="answer" id="b" onclick="checkAnswer('b')"><div>
+        <div class="answer" id="c" onclick="checkAnswer('c')"></div>
     </div>
-   </div>
-   
-    <div id="results">
+     <!--<button id="next" onclick="renderQuestion()">Next Question</button>-->
+</div> 
 
-        <button id="next">Next Question</button>
-       
-    </div> 
-
-    <div class="score-area">
-        <p class="scores">Correct Answers<span id="correct"> 0 </span></p>
-        <p class="scores">Incorrect Answers<span id="incorrect"> 0 </span></p>
-    </div>    
-</div>
+<div id="scoreContainer">
+    <p class="scores">Correct Answers<span id="correct"> 0 </span></p>
+    <p class="scores">Incorrect Answers<span id="incorrect"> 0 </span></p>
+</div>    
     
     <script src="assets/js/script.js"></script>
 </body>
