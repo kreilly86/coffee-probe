@@ -222,6 +222,7 @@ body {
     cursor: pointer;
     width: 70%;
     margin: 25px 0 5px 25px;
+    justify-content: center;
 }
 
 .answer {

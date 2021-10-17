@@ -116,7 +116,7 @@ let questions = [
       document.getElementById("incorrect").innerText = ++runningQuestionIndex;
     }
 
- /* function checkAnswer(answer) {
+/* function checkAnswer(answer) { 
     if (questions[runningQuestionIndex].correctAnswer) == answer {
           answerIsCorrect();
         } else {
@@ -126,5 +126,4 @@ let questions = [
             runningQuestionIndex ++;
             renderQuestion();
         }
-   }
-   */
+   }*/
