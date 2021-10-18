@@ -31,11 +31,9 @@
         <h3>Test your coffee knowledge</h3>
         <br>
         <br>
-       
-        <script src="assets/js/script.js"></script>
 
             <div class="begin">
-               <a id="begin-btn" onclick="openForm()">LET'S BEGIN!!</a>
+               <button type="button" id="begin-btn" onclick="openForm()">LET'S BEGIN!!</button>
            </div>
            <br> 
            <br>
@@ -51,12 +49,12 @@
             <label for="email"><b>Email</b></label>
             <input type="email" placeholder="Enter email" name="email" required>
         
-            <button type="submit" href="levels.html" on click="renderQuestion" class="btn">Submit</button>
-          </form>
-
+            <button type="submit" onclick="location.href='levels.html';" class="btn">Submit</button>
+        </form>
     </div>
 
 </div>
+<script src="assets/js/script.js"></script>
     
      
 </body>

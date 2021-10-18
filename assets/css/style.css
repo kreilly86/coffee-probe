@@ -54,18 +54,19 @@ body {
     font-size: 14px;
     border: 1px solid black;
     box-shadow:  0 8px 16px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
 }
 
 /* The popup form - hidden by default */
 .form-popup {
     display: none;
+    flex: 4;
     position: fixed;
     border: 3px solid #f1f1f1;
     z-index: 5;
     justify-content: center;
     margin-top: 275px;
   }
-
   /* Add styles to the form container */
 .form-container {
     width: 400px;
@@ -90,7 +91,7 @@ body {
   }
 
   /* Set a style for the submit button */
-.form-container .btn {
+ .btn {
     background-color: #114b5f;
     color: white;
     padding: 15px;
@@ -212,6 +213,10 @@ body {
     font-weight: 800;
     text-align: left;
     font-size: 1.5rem;
+}
+
+#rightAnswer {
+    display: none;
 }
 
 #next {

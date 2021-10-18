@@ -1,7 +1,7 @@
 // handle user input
 
 function openForm() {
-    document.getElementById("userInput").style.display ="block";
+    document.getElementById("userInput").style.display = "block";
   }
 
 // Quiz section
@@ -13,6 +13,8 @@ const choiceB = document.getElementById('b');
 const choiceC = document.getElementById('c');
 
 const scoreContainer = document.getElementById('scoreContainer');
+const correctScore = document.getElementById('correct');
+const incorrectScore = document.getElementsByClassName('incorrect');
 
 // questions
 
@@ -91,7 +93,7 @@ let questions = [
 
   let lastQuestionIndex = questions.length -1;
   let runningQuestionIndex = 0;
-
+  
   function renderQuestion () {
       let q = questions[runningQuestionIndex];
       question.innerHTML = "<p>" + q.question + "</p>";
@@ -99,31 +101,26 @@ let questions = [
       choiceB.innerHTML = q.choiceB;
       choiceC.innerHTML = q.choiceC;
   }
- runningQuestionIndex = 0;
- renderQuestion()
- 
- runningQuestionIndex ++
- renderQuestion()
 
-// gets the current score from the DOM and increment by 1
-    function answerIsCorrect() {
-        document.getElementById(runningQuestionIndex)= parseInt(document.getElementById("correct").innerText);
-         document.getElementById("correct").innerText = ++runningQuestionIndex;
-    }
-
-    function answerIsIncorrect() {
-      document.getElementById(runningQuestionIndex)= parseInt(document.getElementById("incorrect").innerText);
-      document.getElementById("incorrect").innerText = ++runningQuestionIndex;
-    }
-
-/* function checkAnswer(answer) { 
-    if (questions[runningQuestionIndex].correctAnswer) == answer {
-          answerIsCorrect();
+  renderQuestion();
+/*
+ function checkAnswer(answer) { 
+    if (questions[runningQuestionIndex].correctAnswer == answer) {
+          correctScore.innerHTML++;
         } else {
-          answerIsIncorrect();
+          incorrectScore.innerHTML++;
         }
-          else if (runningQuestionIndex < lastQuestionIndex) {
+          if (runningQuestionIndex < lastQuestionIndex) {
             runningQuestionIndex ++;
             renderQuestion();
         }
-   }*/
+   }
+
+   /* gets the current score from the DOM and increment by 1
+   function answerIsCorrect() {
+        
+  }
+
+  function answerIsIncorrect() {
+ 
+  }*/
