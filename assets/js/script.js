@@ -13,8 +13,8 @@ const choiceB = document.getElementById('b');
 const choiceC = document.getElementById('c');
 
 const scoreContainer = document.getElementById('scoreContainer');
-const correctScore = document.getElementById('correct');
-const incorrectScore = document.getElementsByClassName('incorrect');
+let correctScore = 0;
+let incorrectScore = 0;
 
 // questions
 
@@ -91,11 +91,15 @@ let questions = [
     },  
   ];
 
-  let lastQuestionIndex = questions.length -1;
-  let runningQuestionIndex = 0;
+  // variables
+
+  let lastQuestion = questions.length -1;
+  let runningQuestion = 0;
+
+  // function to render a question
   
   function renderQuestion () {
-      let q = questions[runningQuestionIndex];
+      let q = questions[runningQuestion];
       question.innerHTML = "<p>" + q.question + "</p>";
       choiceA.innerHTML = q.choiceA;
       choiceB.innerHTML = q.choiceB;
@@ -103,24 +107,30 @@ let questions = [
   }
 
   renderQuestion();
-/*
+
+// Function to check the answer
+
  function checkAnswer(answer) { 
-    if (questions[runningQuestionIndex].correctAnswer == answer) {
-          correctScore.innerHTML++;
+    if (answer == questions[runningQuestion].correctAnswer) {
+          // answer is correct
+          answerIsCorrect();
         } else {
-          incorrectScore.innerHTML++;
+          // answer is incorrect
+          answerIsIncorrect();
         }
-          if (runningQuestionIndex < lastQuestionIndex) {
-            runningQuestionIndex ++;
+          if (runningQuestion < lastQuestion) {
+            runningQuestion ++;
             renderQuestion();
         }
    }
 
-   /* gets the current score from the DOM and increment by 1
+   // Gets the current score from the DOM and increment by 1
    function answerIsCorrect() {
-        
+      let oldScore = parseInt(document.getElementById('correct').innerText);
+       document.getElementById('correct').innerText= ++oldScore; 
   }
 
   function answerIsIncorrect() {
- 
-  }*/
+    let oldScore = parseInt(document.getElementById('incorrect').innerText);
+    document.getElementById('incorrect').innerText= ++oldScore; 
+  }

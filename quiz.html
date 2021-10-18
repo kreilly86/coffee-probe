@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-   <!-- Google Fonts -->
-   <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Poppins:wght@600&display=swap"
+        rel="stylesheet">
     <title>Coffee Probe</title>
 </head>
+
 <body>
     <div class="main-container">
-    <header class="heading"> 
-        <div class="home-nav">
-            <a href="index.html"><img src="assets/images/coffee-beans.png" alt= "coffee beans"></a>
+        <header class="heading">
+            <div class="home-nav">
+                <a href="index.html"><img src="assets/images/coffee-beans.png" alt="coffee beans"></a>
+            </div>
+            <img class="logo" src="assets/images/logo.png" alt=logo>
+        </header>
+
+        <div id="progress-bar">
+            <div id="my-progress">0%</div>
         </div>
-        <img class="logo" src="assets/images/logo.png" alt=logo> 
-    </header>
 
-    <div id="progress-bar">
-        <div id="my-progress">0%</div>
-    </div>
+        <div id="quiz">
+            <div id="question">
+                <p> </p>
+            </div>
 
-    <div id="quiz">
-     <div id="question"><p> </p>
-    </div>
+            <div id="answers">
+                <div class="answer" id="a" onclick="checkAnswer('c')"></div>
+                <div class="answer" id="b" onclick="checkAnswer('b')"></div>
+                <div class="answer" id="c" onclick="checkAnswer('c')"></div>
+                <div class="rightAnswer" id="rightAnswer"></div>
+            </div>
+            <button id="next">Next Question</button>
+        </div>
 
-     <div id="answers">
-        <div class="answer" id="a" onclick="checkAnswer('a')"></div>
-        <div class="answer" id="b" onclick="checkAnswer('b')"></div>
-        <div class="answer" id="c" onclick="checkAnswer('c')"></div>
-        <div class="rightAnswer" id="rightAnswer"></div>
-    </div>
-     <button id="next" onclick="renderQuestion()">Next Question</button>
-</div> 
+        <div id="scoreContainer">
+            <p class="scores">Correct Answers<span id="correct"> 0 </span></p>
+            <p class="scores">Incorrect Answers<span id="incorrect"> 0 </span></p>
+        </div>
 
-<div id="scoreContainer">
-    <p class="scores">Correct Answers<span id="correct"> 0 </span></p>
-    <p class="scores">Incorrect Answers<span id="incorrect"> 0 </span></p>
-</div>    
-    
-    <script src="assets/js/script.js"></script>
+        <script src="assets/js/script.js"></script>
 </body>
+
 </html>
