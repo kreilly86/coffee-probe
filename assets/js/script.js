@@ -12,7 +12,6 @@ const choiceA = document.getElementById('a');
 const choiceB = document.getElementById('b');
 const choiceC = document.getElementById('c');
 
-const scoreContainer = document.getElementById('scoreContainer');
 let correctScore = 0;
 let incorrectScore = 0;
 
@@ -93,7 +92,7 @@ let questions = [
 
   // variables
 
-  let lastQuestion = questions.length -1;
+  const lastQuestion = questions.length -1;
   let runningQuestion = 0;
 
   // function to render a question
@@ -107,23 +106,27 @@ let questions = [
   }
 
   renderQuestion();
+  let score= 0;
 
 // Function to check the answer
 
  function checkAnswer(answer) { 
     if (answer == questions[runningQuestion].correctAnswer) {
           // answer is correct
+          score ++;
           answerIsCorrect();
         } else {
           // answer is incorrect
           answerIsIncorrect();
         }
           if (runningQuestion < lastQuestion) {
-            runningQuestion ++;
+            runningQuestion++;
             renderQuestion();
+            move();
+            
         }
    }
-
+      
    // Gets the current score from the DOM and increment by 1
    function answerIsCorrect() {
       let oldScore = parseInt(document.getElementById('correct').innerText);
@@ -134,3 +137,25 @@ let questions = [
     let oldScore = parseInt(document.getElementById('incorrect').innerText);
     document.getElementById('incorrect').innerText= ++oldScore; 
   }
+
+  // Progress bar to show user what stage of the quiz they are at
+
+  var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("my-progress");
+    var width = 10;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+        elem.innerHTML = width + "%";
+      }
+    }
+  }
+}
