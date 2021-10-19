@@ -121,8 +121,10 @@ let questions = [
         }
           if (runningQuestion < lastQuestion) {
             runningQuestion++;
+            quizProgress();
             renderQuestion();
             move();
+            
             
         }
    }
@@ -140,22 +142,15 @@ let questions = [
 
   // Progress bar to show user what stage of the quiz they are at
 
-  var i = 0;
-function move() {
-  if (i == 0) {
-    i = 1;
-    var elem = document.getElementById("my-progress");
-    var width = 10;
-    var id = setInterval(frame, 10);
-    function frame() {
-      if (width >= 100) {
-        clearInterval(id);
-        i = 0;
-      } else {
-        width++;
-        elem.style.width = width + "%";
-        elem.innerHTML = width + "%";
-      }
+     var beginSize = ("my-progress").width
+     var fullSize = ("my-progress-full").width
+   
+     function quizProgress() {
+    
+      if("beginSize" < 100) {
+        var increment = "fullSize"/ 10;
+         document.getElementsByClassName("my-progress").style.display= width + increment;
     }
-  }
 }
+
+  

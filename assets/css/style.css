@@ -180,18 +180,35 @@ body {
     color: #9F9AA4;
 }
 
-#progress-bar {
+.progress-bar {
     width: 54%;
+    height: 25px;
     background-color: #9f9aa4;
     margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
 }
 
-#my-progress {
-    width: 0%;
+.my-progress {
+    position: absolute;
     height: 25px;
+    width: 0%;
     background-color: #114B5F;
     text-align: center;
     color: white;
+    border-radius: 8px;
+    
+}
+
+.my-progress-full {
+    position: absolute;
+    height: 25px;
+    width: 100%;
+    background-color: #114B5F;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+    
 }
 
 #quiz {
