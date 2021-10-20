@@ -181,6 +181,7 @@ body {
 }
 
 .progress-bar {
+    position: relative;
     width: 54%;
     height: 25px;
     background-color: #9f9aa4;
@@ -190,14 +191,20 @@ body {
 }
 
 .my-progress {
-    position: absolute;
     height: 25px;
     width: 0%;
     background-color: #114B5F;
     text-align: center;
     color: white;
     border-radius: 8px;
-    
+    transition: all 0.5s;    
+}
+
+.progress-text {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    color: white;
 }
 
 #quiz {
