@@ -144,7 +144,7 @@ function increment() {
   let newWidth = currentWidth + maxWidth * .1;
   document.getElementById('my-progress').style.width = `${newWidth}px`;
   let progressTextValue = document.getElementById('progress-text').children[0];
-  progressTextValue.innerText = (Number(progressTextValue.innerText) + 10);
+  progressTextValue.innerText = String(Number(progressTextValue.innerText) + 10);
 }
 
 
@@ -152,12 +152,10 @@ function increment() {
   let correctScores = document.getElementById('correct').innerText;
   console.log(correctScores);
   let incorrectScores =  document.getElementById('incorrect').innerText;
-  let finalScores = correctScores.value + incorrectScores.value;
+  let finalScores = correctScores.innerHTML + incorrectScores.innerText;
+  
 
   function showResults() {
-    if (finalScores) {
-        document.getElementById("yourResult").style.display= "block";  
-      } else {
-      renderQuestion();
-      }
+        finalScores = 
+        document.getElementById("yourResult").style.display= "block";    
   }
