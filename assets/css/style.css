@@ -276,7 +276,17 @@ body {
     width: 400px;
     height: 375px;
     padding: 10px;
-    background-color: rgba(159, 154, 164, 0.9);
+    background-color: rgba(159, 154, 164);
+}
+
+#endOfQuiz {
+    display: none;
+    flex: 4;
+    position: fixed;
+    border: 3px solid #f1f1f1;
+    z-index: 5;
+    justify-content: center;
+    margin-top: 275px;
 }
 
 /* Media Quieries */

@@ -121,12 +121,9 @@ function checkAnswer(answer) {
         if (runningQuestion <= lastQuestion) {    
          increment(); 
          runningQuestion++;
-         renderQuestion();
-         
-       } else {
-        showResults();
-       }
- }
+         renderQuestion(); 
+       } 
+   }
       
  // Gets the current score from the DOM and increment by 1
  function answerIsCorrect() {
@@ -150,9 +147,17 @@ function increment() {
   progressTextValue.innerText = (Number(progressTextValue.innerText) + 10);
 }
 
-   /* Display results
+
+   // Display results
+  let correctScores = document.getElementById('correct').innerText;
+  console.log(correctScores);
+  let incorrectScores =  document.getElementById('incorrect').innerText;
+  let finalScores = correctScores.value + incorrectScores.value;
 
   function showResults() {
-    document.getElementById("yourResult").style.display= "block";
+    if (finalScores) {
+        document.getElementById("yourResult").style.display= "block";  
+      } else {
+      renderQuestion();
+      }
   }
-  */
