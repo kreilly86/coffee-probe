@@ -150,34 +150,6 @@ function increment() {
   progressTextValue.innerText = (Number(progressTextValue.innerText) + 10);
 }
 
-
-
-
-
-
-
-function getProgress() {
-    document.getElementById('my-progress').getAttribute("style", "width");
-    document.getElementById('progress-text').innerHTML;
-}
- 
-function quizProgress(value) {
-      document.getElementById('my-progress').setAttribute("style","width:" +10+ "%");
-      document.getElementById('progress-text').innerHTML =(10+"%");
-      }
-
-    function increment() {
-      var i = getProgress();
-      if(i <100,"%") {
-        i++;
-        quizProgress(i);
-      } else {
-        alert("Quiz Complete!");
-      }
-    }
-  
-   
-
    /* Display results
 
   function showResults() {

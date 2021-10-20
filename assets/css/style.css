@@ -12,7 +12,7 @@ body {
 }
 
 .heading {
-    flex: 1; 
+    flex: 1;
     margin: 0;
     padding: 0;
 }
@@ -47,13 +47,13 @@ body {
     font-family: "Poppins", sans-serif;
     text-decoration: none;
     margin-top: 0px;
-    margin-bottom: 75px; 
-    margin-right: 15px;
+    margin-bottom: 75px;
+    margin-right: 10px;
     padding: 15px 32px;
-    text-align: center;
+    align-items: center;
     font-size: 14px;
     border: 1px solid black;
-    box-shadow:  0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
 
@@ -66,32 +66,35 @@ body {
     z-index: 5;
     justify-content: center;
     margin-top: 275px;
-  }
-  /* Add styles to the form container */
+}
+
+/* Add styles to the form container */
 .form-container {
     width: 400px;
     height: 375px;
     padding: 10px;
-    background-color: rgba(159, 154, 164,0.9);
-  }
-  
-  /* Full-width input fields */
-  .form-container input[type=text], .form-container input[type=email] {
+    background-color: rgba(159, 154, 164, 0.9);
+}
+
+/* Full-width input fields */
+.form-container input[type=text],
+.form-container input[type=email] {
     width: 70%;
     padding: 15px;
     margin: 25px 0 25px 0;
     border: none;
     background: #f1f1f1;
-  }
+}
 
-  /* When the inputs get focus, do something */
-.form-container input[type=text]:focus, .form-container input[type=email]:focus {
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus,
+.form-container input[type=email]:focus {
     background-color: #9f9aa4;
     outline: none;
-  }
+}
 
-  /* Set a style for the submit button */
- .btn {
+/* Set a style for the submit button */
+.btn {
     background-color: #114b5f;
     color: white;
     padding: 15px;
@@ -100,11 +103,11 @@ body {
     width: 70%;
     margin: 25px 0 5px 25px;
     opacity: 0.8;
-  }
+}
 
-.levels > button {
+.levels>button {
     margin-top: 0px;
-    margin-bottom: 50px; 
+    margin-bottom: 50px;
     margin-right: 15px;
     padding: 15px 32px;
     text-align: center;
@@ -112,11 +115,11 @@ body {
     text-decoration: none;
     font-size: 16px;
     border: 2px solid #114B5F;
-    box-shadow:  0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .levels-container {
-    flex:3;
+    flex: 3;
     font-family: "Major Mono Display", sans-serif;
     background-color: white;
     color: #114B5F;
@@ -129,7 +132,7 @@ body {
     text-align: center;
 }
 
-.levels-container > h2 {
+.levels-container>h2 {
     font-family: "Major Mono Display", sans-serif;
     margin-bottom: 75px;
     color: #114B5F;
@@ -139,7 +142,7 @@ body {
     font-family: "Poppins", sans-serif;
     color: black;
     margin-top: 0px;
-    margin-bottom: 50px; 
+    margin-bottom: 50px;
     margin-right: 15px;
     padding: 7px 16px;
     text-align: center;
@@ -147,13 +150,13 @@ body {
     text-decoration: none;
     font-size: 16px;
     border: 1px solid black;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .easy {
     background-color: #C2A83E;
     color: black;
-  }
+}
 
 .easy:hover {
     background-color: #C2A83E;
@@ -169,6 +172,7 @@ body {
     background-color: #3AAFB9;
     color: white;
 }
+
 .expert {
     background-color: #9F9AA4;
     color: black;
@@ -197,7 +201,7 @@ body {
     text-align: center;
     color: white;
     border-radius: 8px;
-    transition: all 0.5s;    
+    transition: all 0.5s;
 }
 
 #progress-text {
@@ -208,7 +212,7 @@ body {
 }
 
 #quiz {
-    flex:3;
+    flex: 3;
     background-color: white;
     color: #114B5F;
     border: 1px solid #114B5F;
@@ -256,22 +260,69 @@ body {
 }
 
 .endOfQuiz {
-        display:none;
+    display: none;
+    flex: 4;
+    background-color: white;
+    color: #114B5F;
+    border: 1px solid #114B5F;
+    padding: 25px;
+    width: 50%;
+    height: 800px;
+    text-align: left;
+    margin-bottom: 75px;
+}
+
+#yourResult {
+    width: 400px;
+    height: 375px;
+    padding: 10px;
+    background-color: rgba(159, 154, 164, 0.9);
+}
+
+/* Media Quieries */
+
+@media only screen and (max-width: 600px) {
+    .form-popup {
+        display: none;
         flex: 4;
+        z-index: 5;
+        position: absolute;
+        border: 3px solid #f1f1f1;
+        justify-content: center;
+        margin-top: 450px;
+    }
+
+    /* Add styles to the form container */
+    .form-container {
+        width: 50vw;
+        height: 375px;
+        padding: 10px;
+        background-color: rgba(159, 154, 164, 0.9);
+        text-align: center;
+    }
+
+    #quiz {
+        flex: 3;
         background-color: white;
         color: #114B5F;
         border: 1px solid #114B5F;
         padding: 25px;
-        width: 50%;
-        height: 800px;
+        width: 80%;
+        height: fit-content;
         text-align: left;
         margin-bottom: 75px;
     }
 
-    #yourResult {
-    width: 400px;
-    height: 375px;
-    padding: 10px;
-    background-color: rgba(159, 154, 164,0.9);
+    #progress-bar {
+        position: relative;
+        width: 100%;
+        height: 25px;
+        background-color: #9f9aa4;
+        margin-bottom: 10px;
+        border: 1px solid black;
+        border-radius: 8px;
     }
 
+
+
+}
