@@ -13,7 +13,6 @@ The quiz is made up of 3 sections of questions:
 
 ### USER STORIES
 <hr>
-
 As a user I want to:
 <br>
 - Seamlessly navigate the quiz with intuitive navigation in place.
@@ -26,9 +25,6 @@ As a user I want to:
 
 ### FEATURES
 <hr>
-
-<strong>Existing Features</strong>
-<br>
 
 #### HOME NAV
 <br>
@@ -48,21 +44,25 @@ As a user I want to:
 
 <hr>
 
+### FEATURES FOR FUTURE INCLUSION
+
 ### CREDITS
 
-### CODE
+#### CODE
 
 https://www.w3schools.com/css/css3_buttons.asp
 
 https://www.w3schools.com/tags/att_form_action.asp
 
-#### Youtube Tutorials
+https://www.w3schools.com/howto/howto_js_popup_form.asp
+
+#### YOUTUBE TUTORIALS
 
 https://www.youtube.com/watch?v=kjhsS4lNZ9o  *progress bar*
 
 https://www.youtube.com/watch?v=49pYIMygIcU *multi choice quiz*
 
-### CONTENT
+#### CONTENT
 
  -Contrast Grid 
  -https://color.adobe.com/create/color-wheel
@@ -70,10 +70,23 @@ https://www.youtube.com/watch?v=49pYIMygIcU *multi choice quiz*
 -Coolors.co
  -https://coolors.co/114b5f-e0eec6-3aafb9-c2a83e-9f9aa4
 
+ -Flaticon Icons *For use in the quiz results pop-up*
+
+   <div>Icons made by <a href="https://www.flaticon.com/authors/amethystdesign" title="AmethystDesign">AmethystDesign</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+   <div>Icons made by <a href="" title="bsd">bsd</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> 
+
+   <div>Icons made by <a href="" title="photo3idea_studio">photo3idea_studio</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+
 <br>
 
  ### BUGS AND ISSUES
  <br>
+ #### 
+
+ ### TESTING
+
 
 
 

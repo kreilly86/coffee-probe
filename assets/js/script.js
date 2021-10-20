@@ -127,8 +127,6 @@ function checkAnswer(answer) {
         showResults();
        }
  }
-
- 
       
  // Gets the current score from the DOM and increment by 1
  function answerIsCorrect() {
@@ -157,7 +155,7 @@ function increment() {
 
 
 
-/*
+
 function getProgress() {
     document.getElementById('my-progress').getAttribute("style", "width");
     document.getElementById('progress-text').innerHTML;
@@ -176,12 +174,11 @@ function quizProgress(value) {
       } else {
         alert("Quiz Complete!");
       }
-    }*/
+    }
   
    
 
    /* Display results
-
 
   function showResults() {
     document.getElementById("yourResult").style.display= "block";
