@@ -7,7 +7,7 @@ function openForm() {
 //Easy mode  
 // Quiz section
 const quiz = document.getElementById("quiz");
-const question = document.getElementsByClassName("question");
+const question = document.getElementById("question");
 
 const choiceA = document.getElementById('a');
 const choiceB = document.getElementById('b');
@@ -118,12 +118,17 @@ function checkAnswer(answer) {
         // answer is incorrect
         answerIsIncorrect();
       }
-        if (runningQuestion < lastQuestion) {   
-          runningQuestion++;
-          renderQuestion();
-          quizProgress();
-      }
+        if (runningQuestion <= lastQuestion) {    
+         increment(); 
+         runningQuestion++;
+         renderQuestion();
+         
+       } else {
+        showResults();
+       }
  }
+
+ 
       
  // Gets the current score from the DOM and increment by 1
  function answerIsCorrect() {
@@ -136,12 +141,49 @@ function answerIsIncorrect() {
   document.getElementById('incorrect').innerText= ++oldScore; 
 }
 
-// Progress bar to show user what stage of the quiz they are at      
+// Progress bar to show user what stage of the quiz they are at  
 
-   function quizProgress(progressBar, value) {
-      progressBar.querySelector(".my-progress").style.width = `${value}%`;
-      progressBar.querySelector(".progress-text").textContent = `${value}%`;  
-   }
+function increment() {
+  let maxWidth = document.getElementById('progress-bar').offsetWidth;
+  let currentWidth = document.getElementById('my-progress').offsetWidth;
+  let newWidth = currentWidth + maxWidth * .1;
+  document.getElementById('my-progress').style.width = `${newWidth}px`;
+  let progressTextValue = document.getElementById('progress-text').children[0];
+  progressTextValue.innerText = (Number(progressTextValue.innerText) + 10);
+}
 
-   let myProgress= document.querySelector(".progress-bar");
-  quizProgress(myProgress,10);
+
+
+
+
+
+/*
+function getProgress() {
+    document.getElementById('my-progress').getAttribute("style", "width");
+    document.getElementById('progress-text').innerHTML;
+}
+ 
+function quizProgress(value) {
+      document.getElementById('my-progress').setAttribute("style","width:" +10+ "%");
+      document.getElementById('progress-text').innerHTML =(10+"%");
+      }
+
+    function increment() {
+      var i = getProgress();
+      if(i <100,"%") {
+        i++;
+        quizProgress(i);
+      } else {
+        alert("Quiz Complete!");
+      }
+    }*/
+  
+   
+
+   /* Display results
+
+
+  function showResults() {
+    document.getElementById("yourResult").style.display= "block";
+  }
+  */

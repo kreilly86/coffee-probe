@@ -180,7 +180,7 @@ body {
     color: #9F9AA4;
 }
 
-.progress-bar {
+#progress-bar {
     position: relative;
     width: 54%;
     height: 25px;
@@ -190,9 +190,10 @@ body {
     border-radius: 8px;
 }
 
-.my-progress {
+#my-progress {
     height: 25px;
     width: 0%;
+    max-width: 100%;
     background-color: #114B5F;
     text-align: center;
     color: white;
@@ -200,7 +201,7 @@ body {
     transition: all 0.5s;    
 }
 
-.progress-text {
+#progress-text {
     position: absolute;
     top: 0;
     left: 5px;
@@ -226,17 +227,6 @@ body {
     font-weight: 800;
     text-align: left;
     font-size: 1.5rem;
-}
-
-#next {
-    background-color: #114b5f;
-    color: white;
-    padding: 15px;
-    border: none;
-    cursor: pointer;
-    width: 70%;
-    margin: 25px 0 5px 25px;
-    justify-content: center;
 }
 
 .answer {
@@ -265,4 +255,24 @@ body {
     color: red;
     padding-left: 5px;
 }
+
+.endOfQuiz {
+        display:none;
+        flex: 4;
+        background-color: white;
+        color: #114B5F;
+        border: 1px solid #114B5F;
+        padding: 25px;
+        width: 50%;
+        height: 800px;
+        text-align: left;
+        margin-bottom: 75px;
+    }
+
+    #yourResult {
+    width: 400px;
+    height: 375px;
+    padding: 10px;
+    background-color: rgba(159, 154, 164,0.9);
+    }
 

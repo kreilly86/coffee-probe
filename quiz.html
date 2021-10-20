@@ -21,9 +21,9 @@
             <img class="logo" src="assets/images/logo.png" alt=logo>
         </header>
 
-        <div class="progress-bar">
-            <div class="my-progress"></div>
-            <span class="progress-text">0%</span>
+        <div id="progress-bar">
+            <div id='my-progress'></div>
+            <span id='progress-text'><span>0</span>%</span>
         </div>
 
         <div id="quiz">
@@ -35,9 +35,9 @@
                 <div class="answer" id="a" onclick="checkAnswer('a')"></div>
                 <div class="answer" id="b" onclick="checkAnswer('b')"></div>
                 <div class="answer" id="c" onclick="checkAnswer('c')"></div>
-                <div class="rightAnswer" id="rightAnswer"></div>
+            
             </div>
-           <!---<button id="next">Next Question</button>-->
+    
         </div>
 
         <div id="scoreContainer">
@@ -45,6 +45,11 @@
             <p class="scores">Incorrect Answers<span id="incorrect"> 0 </span></p>
         </div>
 
+      <!--- <div class="endofQuiz" id="yourResult">
+            <div class="yourScore">Well done you scored</div>
+
+        </div>
+    --> 
         <script src="assets/js/script.js"></script>
 </body>
 
