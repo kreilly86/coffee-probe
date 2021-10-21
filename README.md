@@ -1,7 +1,7 @@
 # COFFEE PROBE
 <hr>
 
-Coffee probe is an interactive quiz to test your knowledge of all things coffee! For the coffee lovers, and coffee curious alike. Coffee probe is a fun way to test coffee knowledge and learn a few new facts along the way. From coffee origin processing, to espresso and latte art, the quiz covers many different aspects of coffee making and techique.
+Coffee probe is an interactive quiz to test your knowledge of all things coffee! For the coffee lovers, and coffee curious alike. Coffee probe is a fun way to test coffee knowledge and learn a few new facts along the way. From coffee origin processing, to espresso and latte art, the quiz covers many different aspects of coffee making and technique.
 <br>
 <br>
 <img src="assets/images/am-i-responsive-sshot.png">

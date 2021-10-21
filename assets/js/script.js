@@ -4,7 +4,7 @@ function openForm() {
   document.getElementById("userInput").style.display = "block";
 }
 
-// Quiz section
+// quiz section
 const quiz = document.getElementById("quiz");
 const question = document.getElementById("question");
 
@@ -17,279 +17,128 @@ let incorrectScore = 0;
 
 // Questions - Easy
 
-let questions = [
-{
-  question: "What is a Latte?",
+let questions = [{
+    question: "What is a Latte?",
     choiceA: "a. Espresso lengthened with water",
     choiceB: "b. A shot of Espresso",
     choiceC: "c. A single or double shot of espresso (1/3 of your drink), 2/3 of your drink is steamed milk with a small layer of frothed milk on top",
     correctAnswer: "c"
-  },  
-{
-  question: "What stimulant exists in coffee?",
+  },
+  {
+    question: "What stimulant exists in coffee?",
     choiceA: "a. Caffeine",
     choiceB: "b. Nicotine",
-    choiceC: "c. Ginseng", 
+    choiceC: "c. Ginseng",
     correctAnswer: "a"
   },
-{
-  question: "Which of these can be used to brew coffee?",
+  {
+    question: "Which of these can be used to brew coffee?",
     choiceA: "a.A pot",
     choiceB: "b.A grinder",
     choiceC: "c.A French Press",
     correctAnswer: "c"
   },
-{
-  question: "Which country is well known for producing coffee?",
+  {
+    question: "Which country is well known for producing coffee?",
     choiceA: "a.Ireland",
     choiceB: "b.Brazil",
     choiceC: "c.Iceland",
     correctAnswer: "b"
   },
-{
-  question: "What is the measurement of espresso known as?",
+  {
+    question: "What is the measurement of espresso known as?",
     choiceA: "a.A basket",
     choiceB: "b.A bag",
     choiceC: "c.A shot",
     correctAnswer: "c"
   },
-{
-  question: "What name is given to someone who makes and serves coffee to customers?",
+  {
+    question: "What name is given to someone who makes and serves coffee to customers?",
     choiceA: "a.A barista",
     choiceB: "b.A brewer",
     choiceC: "c.A baker",
     correctAnswer: "a"
   },
-{
-  question: "What is the artwork placed on top of coffee drinks with steamed milk known by?",
+  {
+    question: "What is the artwork placed on top of coffee drinks with steamed milk known by?",
     choiceA: "a.Marble effect",
     choiceB: "b.Milk Art",
     choiceC: "c.Latte Art",
     correctAnswer: "c"
-},  
-{
-  question: "What form does coffee need to exist in to brew with?",
+  },
+  {
+    question: "What form does coffee need to exist in to brew with?",
     choiceA: "a.Ground",
     choiceB: "b.Wholebean",
     choiceC: "c.Green",
     correctAnswer: "a"
   },
-{ 
-  question: "What effect is coffee known to have on your body?",
+  {
+    question: "What effect is coffee known to have on your body?",
     choiceA: "a.Helps you to fall asleep",
     choiceB: "b.Causes you to feel more alert",
     choiceC: "c.Helps with headache symptoms",
     correctAnswer: "b"
   },
-{
-  question: "Which of these is not a coffee drink?",
+  {
+    question: "Which of these is not a coffee drink?",
     choiceA: "a.Espresso",
     choiceB: "b.Cappuccino",
     choiceC: "c.Matcha Latte",
     correctAnswer: "c"
-  },  
+  },
 ];
-
-// Questions - Intermediate
-
-let questionsI = [
-  {
-    question: "Which piece of equipment can be used to make filter coffee?",
-      choiceA: "a. A Moka Pot",
-      choiceB: "b. A v60",
-      choiceC: "c. An espresso machine",
-      correctAnswer: "b"
-    },  
-  {
-    question: "What is the name given to the used coffee of an espresso shot?",
-      choiceA: "a. A circle ",
-      choiceB: "b. A disc ",
-      choiceC: "c. A puck ", 
-      correctAnswer: "c"
-    },
-  {
-    question: "Which grind size is most suitable for an aeropress?",
-      choiceA: "a. Coarse",
-      choiceB: "b. Fine ",
-      choiceC: "c. Very fine ",
-      correctAnswer: "b"
-    },
-  {
-    question: "What is extraction?",
-      choiceA: "a. A fan used to cool coffee in the roasting process",
-      choiceB: "b. The method by which flavours and other compounds are dissolved in water when coffee is brewed",
-      choiceC: "c. The amount of coffee taken from the grinder",
-      correctAnswer: "b"
-    },
-  {
-    question: "What would be an acceptable brew time for a v60?",
-      choiceA: "a. 2 minutes",
-      choiceB: "b. 45 seconds",
-      choiceC: "c. 5 minutes ",
-      correctAnswer: "a"
-    },
-  {
-    question: "What is the name of the coffee fruit?",
-      choiceA: "a. A coffee cherry",
-      choiceB: "b. A coffee grape",
-      choiceC: "c. A coffee berry",
-      correctAnswer: "a"
-    },
-  {
-    question: "What is the ideal rest time after roasting espresso before it is suitable for use?",
-      choiceA: "a. 2 weeks",
-      choiceB: "b. 7-10 days ",
-      choiceC: "c. 2 days",
-      correctAnswer: "b"
-  },  
-  {
-    question: "What is a cortado?",
-      choiceA: "a. One or two shots of coffee mixed with an equal amount of steamed milk",
-      choiceB: "b. One or two shots of espresso mixed only with milk foam on top",
-      choiceC: "c. A long black coffee with some cold milk added",
-      correctAnswer: "a"
-    },
-  { 
-    question: "What are the two main types of coffee?",
-      choiceA: "a. Syrah and Pinot",
-      choiceB: "b. Arabica and Robusta",
-      choiceC: "c. Bergamot and Stevia",
-      correctAnswer: "b"
-    },
-  {
-    question: " Which of these coffees also contains ice cream?",
-      choiceA: "a. Affogato",
-      choiceB: "b. Ristretto",
-      choiceC: "c. Macchiato",
-      correctAnswer: "a"
-    },  
-  ];
-
-  // Questions- Expert
-
-  let questionsE = [
-    {
-      question: "What is a Latte?",
-        choiceA: "a. Espresso lengthened with water",
-        choiceB: "b. A shot of Espresso",
-        choiceC: "c. A single or double shot of espresso (1/3 of your drink), 2/3 of your drink is steamed milk with a small layer of frothed milk on top",
-        correctAnswer: "c"
-      },  
-    {
-      question: "What stimulant exists in coffee?",
-        choiceA: "a. Caffeine",
-        choiceB: "b. Nicotine",
-        choiceC: "c. Ginseng", 
-        correctAnswer: "a"
-      },
-    {
-      question: "Which of these can be used to brew coffee?",
-        choiceA: "a.A pot",
-        choiceB: "b.A grinder",
-        choiceC: "c.A French Press",
-        correctAnswer: "c"
-      },
-    {
-      question: "Which country is well known for producing coffee?",
-        choiceA: "a.Ireland",
-        choiceB: "b.Brazil",
-        choiceC: "c.Iceland",
-        correctAnswer: "b"
-      },
-    {
-      question: "What is the measurement of espresso known as?",
-        choiceA: "a.A basket",
-        choiceB: "b.A bag",
-        choiceC: "c.A shot",
-        correctAnswer: "c"
-      },
-    {
-      question: "What name is given to someone who makes and serves coffee to customers?",
-        choiceA: "a.A barista",
-        choiceB: "b.A brewer",
-        choiceC: "c.A baker",
-        correctAnswer: "a"
-      },
-    {
-      question: "What is the artwork placed on top of coffee drinks with steamed milk known by?",
-        choiceA: "a.Marble effect",
-        choiceB: "b.Milk Art",
-        choiceC: "c.Latte Art",
-        correctAnswer: "c"
-    },  
-    {
-      question: "What form does coffee need to exist in to brew with?",
-        choiceA: "a.Ground",
-        choiceB: "b.Wholebean",
-        choiceC: "c.Green",
-        correctAnswer: "a"
-      },
-    { 
-      question: "What effect is coffee known to have on your body?",
-        choiceA: "a.Helps you to fall asleep",
-        choiceB: "b.Causes you to feel more alert",
-        choiceC: "c.Helps with headache symptoms",
-        correctAnswer: "b"
-      },
-    {
-      question: "Which of these is not a coffee drink?",
-        choiceA: "a.Espresso",
-        choiceB: "b.Cappuccino",
-        choiceC: "c.Matcha Latte",
-        correctAnswer: "c"
-      },  
-    ];
 
 
 // variables
 
-const lastQuestion = questions.length -1;
+const lastQuestion = questions.length - 1;
 let runningQuestion = 0;
 let score = 0;
 
 // function to render a question
 
-function renderQuestion () {
-    let q = questions[runningQuestion];
-    question.innerHTML = "<p>" + q.question + "</p>";
-    choiceA.innerHTML = q.choiceA;
-    choiceB.innerHTML = q.choiceB;
-    choiceC.innerHTML = q.choiceC;
+function renderQuestion() {
+  let q = questions[runningQuestion];
+  question.innerHTML = "<p>" + q.question + "</p>";
+  choiceA.innerHTML = q.choiceA;
+  choiceB.innerHTML = q.choiceB;
+  choiceC.innerHTML = q.choiceC;
 }
 
 renderQuestion();
 
 // Function to check the answer
 
-function checkAnswer(answer) { 
+function checkAnswer(answer) {
   if (answer == questions[runningQuestion].correctAnswer) {
-        // answer is correct
-        answerIsCorrect();
-        score ++;
-      } else {
-        // answer is incorrect
-        answerIsIncorrect(); 
-        alert(`Sorry you got it wrong! The correct answer is ${questions[runningQuestion].correctAnswer}`);
-      }
-        if (runningQuestion <= lastQuestion) {    
-         runningQuestion++; 
-         increment(); 
-         renderQuestion(); 
-        // end of quiz show score
-       } else {
-         endQuiz();
-       }
-   }
-      
- // Gets the current score from the DOM and increment by 1
- function answerIsCorrect() {
-    let oldScore = parseInt(document.getElementById('correct').innerText);
-     document.getElementById('correct').innerText= ++oldScore; 
+    // answer is correct
+    answerIsCorrect();
+    score++;
+  } else {
+    // answer is incorrect
+    answerIsIncorrect();
+    alert(`Sorry you got it wrong! The correct answer is ${questions[runningQuestion].correctAnswer}`);
+  }
+  if (runningQuestion <= lastQuestion) {
+    runningQuestion++;
+    increment();
+    renderQuestion();
+    // end of quiz 
+  } else {
+    endQuiz();
+  }
+}
+
+// Gets the current score from the DOM and increment by 1
+function answerIsCorrect() {
+  let oldScore = parseInt(document.getElementById('correct').innerText);
+  document.getElementById('correct').innerText = ++oldScore;
 }
 
 function answerIsIncorrect() {
   let oldScore = parseInt(document.getElementById('incorrect').innerText);
-  document.getElementById('incorrect').innerText= ++oldScore; 
+  document.getElementById('incorrect').innerText = ++oldScore;
 }
 
 // Progress bar to show user what stage of the quiz they are at  
@@ -307,23 +156,19 @@ function increment() {
 
 const scoreDiv = document.getElementById("score");
 
- function scoreRender() {
-    document.getElementById('resultsContainer').style.display = "block";
-    document.getElementById('quiz').style.display = "none";
-    document.getElementById('progress-bar').style.display = "none";
-    document.getElementById('scoreContainer').style.display= "none";
-    document.getElementById('logo').style.display= "none";
-    document.getElementById('yourScore').style.display= "none";
+function scoreRender() {
+  document.getElementById('resultsContainer').style.display = "block";
+  document.getElementById('quiz').style.display = "none";
+  document.getElementById('progress-bar').style.display = "none";
+  document.getElementById('scoreContainer').style.display = "none";
+  document.getElementById('logo').style.display = "none";
+  document.getElementById('yourScore').style.display = "none";
 
-    let scorePercent = Math.round(10* (score*10)/ questions.length);
-    let img = (scorePercent > 70) ? 'assets/images/aeropress.png':
-              (scorePercent > 50) ? 'assets/images/bar.png' :
-              (scorePercent > 20) ? 'assets/images/coffee-bag.png' : 'assets/images/thermometer.png';
+  let scorePercent = Math.round(10 * (score * 10) / questions.length);
+  let img = (scorePercent > 70) ? 'assets/images/aeropress.png' :
+    (scorePercent > 50) ? 'assets/images/bar.png' :
+    (scorePercent > 20) ? 'assets/images/coffee-bag.png' : 'assets/images/thermometer.png';
 
-          scoreDiv.innerHTML ="<img src="+ img +">";
-          scoreDiv.innerHTML +="<p>You scored " + scorePercent + "%!</p>";
- }
-
- 
-   
- 
+  scoreDiv.innerHTML = "<img src=" + img + ">";
+  scoreDiv.innerHTML += "<p>You scored " + scorePercent + "%!</p>";
+}
