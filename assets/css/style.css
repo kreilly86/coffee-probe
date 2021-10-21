@@ -379,4 +379,11 @@ body {
         height: 50%;
         border: 3px solid #f1f1f1;
     }
+
+    .scores {
+        display: block;
+        font-size: 1.2rem;
+        color: black;
+        padding: 0px;
+    } 
 }
