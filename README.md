@@ -1,7 +1,10 @@
 # COFFEE PROBE
 <hr>
 
-Coffee probe is an interactive quiz to test your knowledge of all things coffee! For the coffee lovers, and coffee curious alike. Coffee probe is a fun way to test coffee knowledge and learn a few new facts along the way. 
+Coffee probe is an interactive quiz to test your knowledge of all things coffee! For the coffee lovers, and coffee curious alike. Coffee probe is a fun way to test coffee knowledge and learn a few new facts along the way. From coffee origin processing, to espresso and latte art, the quiz covers many different aspects of coffee making and techique.
+<br>
+<br>
+<img src="assets/images/am-i-responsive-sshot.png">
 
 The quiz is made up of 3 sections of questions:
 <br>
@@ -21,6 +24,7 @@ As a user I want to:
   - Have a running score indicator to check my progress
   - Be challenged by the questions at each level
   - Be able to move through each quiz question without any glitches
+  - Be presented with a final score at the end of the quiz
   - Find additional resources to educate myself further
 <br>
 <hr>
@@ -32,7 +36,7 @@ As a user I want to:
 #### HOME NAV
 <hr>
 <br>
-At the top of the screen there is a coffee bean icon which the user can click on to navigate back to the home page:
+At the top of the screen there is a coffee bean icon which the user can click on to navigate back to the home page. This icon was found on flaticon:
 <br>
 <br>
 
@@ -60,7 +64,7 @@ The logo has a sleek look and is instantly recognisable as an espresso machine. 
 #### INTRO MESSAGE AND BEGIN BUTTON
 <hr>
 <br>
-On the homepage there is a simple welcome message to the quiz user displayed in a box below the logo. I have used the same font as the logo for consistency. The message is short and to the point "Welcome to Coffee Probe. Test your coffee knowledge". The user has no question as to the theme of the quiz. 
+On the homepage there is a simple Welcome Message to the quiz user displayed in a box below the logo. I have used the same font as the logo font for consistency. The message is short and to the point "Welcome to Coffee Probe. Test your coffee knowledge". The user has no question as to the theme of the quiz. 
 <br>
 Below the welcome message there is a button displaying "Let's begin" which will load a pop-up for the user to input their details.
 <br>
@@ -129,7 +133,6 @@ There are a lot of things I would have liked to include in the quiz if I had to 
 
 - A timer to limit the amount of time the user has to answer
 - Have the whole project run on one or two html pages, and one JavaScript page rather than having to link them all
-- Alerts to display when the user has answered incorrectly and what the correct answer is
 - An education section where the user can go to find further learning resources
 - A personalised message by capturing the user's name input and displaying at the end when showing the user's score
 <br>
@@ -151,21 +154,33 @@ https://www.w3schools.com/tags/att_form_action.asp
 https://www.w3schools.com/howto/howto_js_popup_form.asp
 
 Code Institute Love Maths Project:
+<br>
+<br>
+I used the code for my running scores using the Love Maths project.
+<br>
 
 https://github.com/Code-Institute-Org/love-maths
 
 <br>
 * A big thank you to fellow Code Institute student Dave Horrocks for advice and help with progress bar code *
 <hr>
+<br>
 
 #### YOUTUBE TUTORIALS
 <hr>
 <br>
 
 https://www.youtube.com/watch?v=kjhsS4lNZ9o  *progress bar*
+<br>
+<br>
+At first I used this progress bar video to code a progress bar, as it was almost what I wanted for my project. I got everything working, but the one issue was the actual progress value had to be inputted, rather it automatically updating as the quiz progressed. I tried different variations but could not get it to loop.
+<br>
+<img src="assets/images/progress-bar-sshot.png"> 
 
 https://www.youtube.com/watch?v=49pYIMygIcU *multi choice quiz*
 <br>
+<br>
+I used the multi choice quiz code to structure most of my quiz. There were additional features taught but I didn't think they would suit my project e.g. using images for the individual questions. I found the score results feature to be extremely helpful. With some tweeking to the math function I was able to run the function to display the users'score at the end of the quiz. The tutorial code was giving me percentage values less than 10% due to it being a different length quiz, I was able to fix this by multiplying the user score by 10 to get an accurate percentage result.
 <hr>
 
 #### CONTENT
@@ -206,10 +221,37 @@ I used Coolors.co to create a colour palette for the quiz. I wanted something si
 <br>
 
  ### BUGS AND ISSUES
+ <hr>
  <br>
  
 
+ 
+
  ### TESTING
+ <hr>
+ <br>
+
+ - I used Lighthouse to check accessibility and the site passed:
+ <br>
+ <img src="assets/images/lighthouse-sshot.png">
+ <br>
+ <BR>
+
+ - I checked the project with Devtools and no project related errors were found.
+
+### VALIDATION
+<hr>
+<br>
+The HTML passed through the 
+
+[ValidatorW3.org](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkreilly86.github.io%2Fcoffee-probe%2F)
+<br>
+<br>
+The CSS passed through the 
+
+[WSC CSS Validation](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkreilly86.github.io%2Fcoffee-probe%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+<br>
+<br>
 
 
 
