@@ -166,7 +166,7 @@ const scoreDiv = document.getElementById("score");
     let scorePercent = Math.round(10* (score*10)/ questions.length);
     let img = (scorePercent > 70) ? 'assets/images/aeropress.png':
               (scorePercent > 50) ? 'assets/images/bar.png' :
-              (scorePercent > 10) ? 'assets/images/beginner.png' : 'assets/images/logo.png';
+              (scorePercent > 20) ? 'assets/images/coffee-bag.png' : 'assets/images/thermometer.png';
 
           scoreDiv.innerHTML ="<img src="+ img +">";
           scoreDiv.innerHTML +="<p>You scored " + scorePercent + "%!</p>";
