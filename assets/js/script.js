@@ -4,19 +4,23 @@ function openForm() {
   document.getElementById("userInput").style.display = "block";
 }
 
-//Easy mode  
 // Quiz section
+// variables
+
 const quiz = document.getElementById("quiz");
 const question = document.getElementById("question");
 
 const choiceA = document.getElementById('a');
 const choiceB = document.getElementById('b');
 const choiceC = document.getElementById('c');
+const lastQuestion = questions.length -1;
 
+let runningQuestion = 0;
+let score = 0;
 let correctScore = 0;
 let incorrectScore = 0;
 
-// questions
+// Questions
 
 let questions = [
 {
@@ -91,14 +95,9 @@ let questions = [
   },  
 ];
 
-// variables
-
-const lastQuestion = questions.length -1;
-let runningQuestion = 0;
-
 // function to render a question
 
-function renderQuestion () {
+function renderQuestion() {
     let q = questions[runningQuestion];
     question.innerHTML = "<p>" + q.question + "</p>";
     choiceA.innerHTML = q.choiceA;
@@ -106,23 +105,25 @@ function renderQuestion () {
     choiceC.innerHTML = q.choiceC;
 }
 
-renderQuestion();
-
 // Function to check the answer
 
 function checkAnswer(answer) { 
   if (answer == questions[runningQuestion].correctAnswer) {
         // answer is correct
         answerIsCorrect();
+        score ++;
       } else {
         // answer is incorrect
-        answerIsIncorrect();
+        answerIsIncorrect();  
       }
         if (runningQuestion <= lastQuestion) {    
          increment(); 
          runningQuestion++;
          renderQuestion(); 
-       } 
+         // end of quiz show score
+       } else {
+         scoreRender();
+       }
    }
       
  // Gets the current score from the DOM and increment by 1
@@ -148,14 +149,20 @@ function increment() {
 }
 
 
-   // Display results
-  let correctScores = document.getElementById('correct').innerText;
-  console.log(correctScores);
-  let incorrectScores =  document.getElementById('incorrect').innerText;
-  let finalScores = correctScores.innerHTML + incorrectScores.innerText;
-  
+// Display results
 
-  function showResults() {
-        finalScores = 
-        document.getElementById("yourResult").style.display= "block";    
-  }
+const scoreDiv = document.getElementById("score");
+
+ function scoreRender() {
+    resultsContainer.style.display = "block";
+    let scorePercent = Math.round(100* score/ questions.length);
+    let img = (scorePercent => 80) ? "img/aeropress.png" :
+              (scorePercent => 60) ? "img/bar.png" :
+              (scorePercent => 10) ? "img/beginner.png" : "img/logo.png";
+
+          scoreDiv.innerHTML ="<img src=" + img + ">";
+          scoreDiv.innerHTML +="<p>" + scorePercent + "%</p>";
+ }
+
+   
+ 
