@@ -157,17 +157,19 @@ const scoreDiv = document.getElementById("score");
 
  function scoreRender() {
     document.getElementById('resultsContainer').style.display = "block";
-    let scorePercent = Math.round(100* score/ questions.length);
-    let img = (scorePercent => 80) ? "img/aeropress.png" :
-              (scorePercent => 60) ? "img/bar.png" :
-              (scorePercent => 10) ? "img/beginner.png" : "img/logo.png";
+    document.getElementById('quiz').style.display = "none";
+    document.getElementById('progress-bar').style.display = "none";
+    document.getElementById('scores').style.display= "none";
 
-          scoreDiv.innerHTML ="<img src=" + img + ">";
-          scoreDiv.innerHTML +="<p>" + scorePercent + "%</p>";
+    let scorePercent = Math.round(10* (score*10)/ questions.length);
+    let img = (scorePercent > 70) ? 'assets/images/aeropress.png':
+              (scorePercent > 50) ? 'assets/images/bar.png' :
+              (scorePercent > 10) ? 'assets/images/beginner.png' : 'assets/images/logo.png';
+
+          scoreDiv.innerHTML ="<img src="+ img +">";
+          scoreDiv.innerHTML +="<p>You scored " + scorePercent + "%!</p>";
  }
 
- function endQuiz() {
-   
- }
+ 
    
  

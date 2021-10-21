@@ -21,7 +21,7 @@ body {
     margin: 25px;
 }
 
-.logo {
+#logo {
     flex: 2;
     padding: 0;
     margin-bottom: 15px;
@@ -242,7 +242,7 @@ body {
     color: black;
 }
 
-.scores {
+#scores {
     display: inline-block;
     font-size: 1.2rem;
     color: black;
@@ -274,10 +274,13 @@ body {
 
 #score {
     flex: 4;
-    width: 400px;
+    width: 500px;
     height: 375px;
-    padding: 10px;
+    padding-top: 100px;
     background-color: rgba(159, 154, 164);
+    font-family: "Major Mono Display", sans-serif;
+    font-weight: bold;
+    font-size: x-large;
 }
 
 #resultsContainer {
@@ -286,6 +289,22 @@ body {
     border: 3px solid #f1f1f1;
     justify-content: center;
     margin-top: 275px;
+}
+
+#yourScore {
+    color: black;
+    background-color: #C2A83E;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    margin-top: 0px;
+    margin-bottom: 75px;
+    margin-right: 10px;
+    padding: 15px 32px;
+    align-items: center;
+    font-size: 14px;
+    border: 1px solid black;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 /* Media Quieries */

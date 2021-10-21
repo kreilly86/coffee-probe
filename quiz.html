@@ -18,7 +18,7 @@
             <div class="home-nav">
                 <a href="index.html"><img src="assets/images/coffee-beans.png" alt="coffee beans"></a>
             </div>
-            <img class="logo" src="assets/images/logo.png" alt=logo>
+            <img id="logo" src="assets/images/logo.png" alt=logo>
         </header>
 
         <div id="progress-bar">
@@ -36,16 +36,18 @@
                 <div class="answer" id="b" onclick="checkAnswer('b')"></div>
                 <div class="answer" id="c" onclick="checkAnswer('c')"></div>
             </div>
-    
         </div>
 
         <div id="scoreContainer">
-            <p class="scores">Correct Answers<span id="correct"> 0 </span></p>
-            <p class="scores">Incorrect Answers<span id="incorrect"> 0 </span></p>
+            
+            <p id="scores">Correct Answers<span id="correct"> 0 </span></p>
+            <p id="scores">Incorrect Answers<span id="incorrect"> 0 </span></p>
+            <button type="button" id="yourScore" onclick="scoreRender()">Your Result!</button>
         </div>
 
             <div id="resultsContainer">
-            <div id="score"> <p>  </p> </div>
+                
+            <div id="score"> </div>
             </div>
     
             <script src="assets/js/script.js"></script>
