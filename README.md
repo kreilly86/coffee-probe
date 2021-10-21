@@ -136,7 +136,13 @@ https://www.w3schools.com/tags/att_form_action.asp
 
 https://www.w3schools.com/howto/howto_js_popup_form.asp
 
+Code Institute Love Maths Project:
+
+https://github.com/Code-Institute-Org/love-maths
+
 <br>
+<br>
+* A big thank you to fellow Code Institute student Dave Horrocks for advice and help with progress bar code *
 <hr>
 
 #### YOUTUBE TUTORIALS
@@ -153,10 +159,11 @@ https://www.youtube.com/watch?v=49pYIMygIcU *multi choice quiz*
 <hr>
 <br>
 
-
- [Contrast Grid](https://color.adobe.com/create/color-wheel)
+[Contrast Grid](https://color.adobe.com/create/color-wheel)
 
 [Coolors.co](https://coolors.co/114b5f-e0eec6-3aafb9-c2a83e-9f9aa4)
+
+[Favicon-converter] https://favicon.io/favicon-converter/
 
  Flaticon Icons *For use in the quiz results pop-up*
 
