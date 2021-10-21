@@ -159,7 +159,9 @@ const scoreDiv = document.getElementById("score");
     document.getElementById('resultsContainer').style.display = "block";
     document.getElementById('quiz').style.display = "none";
     document.getElementById('progress-bar').style.display = "none";
-    document.getElementById('scores').style.display= "none";
+    document.getElementById('scoreContainer').style.display= "none";
+    document.getElementById('logo').style.display= "none";
+    document.getElementById('yourScore').style.display= "none";
 
     let scorePercent = Math.round(10* (score*10)/ questions.length);
     let img = (scorePercent > 70) ? 'assets/images/aeropress.png':

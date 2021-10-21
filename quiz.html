@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="main-container">
+    <div id="main-container">
         <header class="heading">
             <div class="home-nav">
                 <a href="index.html"><img src="assets/images/coffee-beans.png" alt="coffee beans"></a>
@@ -39,19 +39,18 @@
         </div>
 
         <div id="scoreContainer">
-            
-            <p id="scores">Correct Answers<span id="correct"> 0 </span></p>
-            <p id="scores">Incorrect Answers<span id="incorrect"> 0 </span></p>
-            <button type="button" id="yourScore" onclick="scoreRender()">Your Result!</button>
+
+            <p class="scores">Correct Answers<span id="correct"> 0 </span></p>
+            <p class="scores">Incorrect Answers<span id="incorrect"> 0 </span></p>
+        </div>
+        <button type="button" id="yourScore" onclick="scoreRender()">Your Result!</button>
+
+        <div id="resultsContainer">
+            <div id="score"> </div>
         </div>
 
-            <div id="resultsContainer">
-                
-            <div id="score"> </div>
-            </div>
-    
-            <script src="assets/js/script.js"></script>
-</div>
+        <script src="assets/js/script.js"></script>
+    </div>
 </body>
 
 </html>
