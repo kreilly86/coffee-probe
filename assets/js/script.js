@@ -268,7 +268,8 @@ function checkAnswer(answer) {
         score ++;
       } else {
         // answer is incorrect
-        answerIsIncorrect();  
+        answerIsIncorrect(); 
+        alert(`Sorry you got it wrong! The correct answer is ${questions[runningQuestion].correctAnswer}`);
       }
         if (runningQuestion <= lastQuestion) {    
          runningQuestion++; 

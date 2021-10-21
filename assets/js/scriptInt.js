@@ -111,7 +111,8 @@ function checkAnswer(answer) {
         score ++;
       } else {
         // answer is incorrect
-        answerIsIncorrect();  
+        answerIsIncorrect(); 
+        alert(`Sorry you got it wrong! The correct answer is ${questionsI[runningQuestion].correctAnswer}`); 
       }
         if (runningQuestion <= lastQuestion) {    
          runningQuestion++; 

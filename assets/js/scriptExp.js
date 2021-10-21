@@ -113,6 +113,7 @@ function checkAnswer(answer) {
       } else {
         // answer is incorrect
         answerIsIncorrect();  
+        alert(`Sorry you got it wrong! The correct answer is ${questionsE[runningQuestion].correctAnswer}`);
       }
         if (runningQuestion <= lastQuestion) {    
          runningQuestion++; 
