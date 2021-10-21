@@ -9,80 +9,81 @@ const choiceC = document.getElementById('c');
 let correctScore = 0;
 let incorrectScore = 0;
 
-// Questions - Intermediate
+ // Questions- Expert
 
-let questionsE = [
-  {
-    questionE: "Which piece of equipment can be used to make filter coffee?",
-      choiceA: "a. A Moka Pot",
-      choiceB: "b. A v60",
-      choiceC: "c. An espresso machine",
-      correctAnswer: "b"
+ let questionsE = [
+    {
+      questionE: "What flavours would you expect to find from an over extracted coffee?",
+        choiceA: "a. Bitter or dry",
+        choiceB: "b. Sour or muddled",
+        choiceC: "c. Nutty and burnt",
+        correctAnswer: "a"
+      },  
+    {
+      questionE: "What tool is used to measure the amount of dissolved coffee particles in water?",
+        choiceA: "a. Omitter",
+        choiceB: "b. Refractometer",
+        choiceC: "c. Probe meter", 
+        correctAnswer: "b"
+      },
+    {
+      questionE: "What flavours would you expect from a Washed processed coffee?",
+        choiceA: "a. Clean and balanced ",
+        choiceB: "b. Rich and chocolately ",
+        choiceC: "c. Wild and intense fruit qualities",
+        correctAnswer: "a"
+      },
+    {
+      questionE: "What flavours would you expect from a Natural processed coffee?",
+        choiceA: "a. Rich and chocolately",
+        choiceB: "b Wild and intense fruit qualities.",
+        choiceC: "c.Clean and balanced",
+        correctAnswer: "b"
+      },
+    {
+      questionE: "What variety of coffee is considered to be the original?",
+        choiceA: "a. Bourbon",
+        choiceB: "b. Mundo Novo",
+        choiceC: "c. Typica",
+        correctAnswer: "c"
+      },
+    {
+      questionE: "Which of these varietals are less common in Kenya?",
+        choiceA: "a. SL 28",
+        choiceB: "b. Geisha",
+        choiceC: "c. Batian",
+        correctAnswer: "b"
+      },
+    {
+      questionE: "Which country is growing famous for their Geisha varietal?",
+        choiceA: "a. Kenya",
+        choiceB: "b. Panama",
+        choiceC: "c. Colombia",
+        correctAnswer: "b"
     },  
-  {
-    questionE: "What is the name given to the used coffee of an espresso shot?",
-      choiceA: "a. A circle ",
-      choiceB: "b. A disc ",
-      choiceC: "c. A puck ", 
-      correctAnswer: "c"
-    },
-  {
-    questionE: "Which grind size is most suitable for an aeropress?",
-      choiceA: "a. Coarse",
-      choiceB: "b. Fine ",
-      choiceC: "c. Very fine ",
-      correctAnswer: "b"
-    },
-  {
-    questionE: "What is extraction?",
-      choiceA: "a. A fan used to cool coffee in the roasting process",
-      choiceB: "b. The method by which flavours and other compounds are dissolved in water when coffee is brewed",
-      choiceC: "c. The amount of coffee taken from the grinder",
-      correctAnswer: "b"
-    },
-  {
-    questionE: "What would be an acceptable brew time for a v60?",
-      choiceA: "a. 2 minutes",
-      choiceB: "b. 45 seconds",
-      choiceC: "c. 5 minutes ",
-      correctAnswer: "a"
-    },
-  {
-    questionE: "What is the name of the coffee fruit?",
-      choiceA: "a. A coffee cherry",
-      choiceB: "b. A coffee grape",
-      choiceC: "c. A coffee berry",
-      correctAnswer: "a"
-    },
-  {
-    questionE: "What is the ideal rest time after roasting espresso before it is suitable for use?",
-      choiceA: "a. 2 weeks",
-      choiceB: "b. 7-10 days ",
-      choiceC: "c. 2 days",
-      correctAnswer: "b"
-  },  
-  {
-    questionE: "What is a cortado?",
-      choiceA: "a. One or two shots of coffee mixed with an equal amount of steamed milk",
-      choiceB: "b. One or two shots of espresso mixed only with milk foam on top",
-      choiceC: "c. A long black coffee with some cold milk added",
-      correctAnswer: "a"
-    },
-  { 
-    questionE: "What are the two main types of coffee?",
-      choiceA: "a. Syrah and Pinot",
-      choiceB: "b. Arabica and Robusta",
-      choiceC: "c. Bergamot and Stevia",
-      correctAnswer: "b"
-    },
-  {
-    questionE: " Which of these coffees also contains ice cream?",
-      choiceA: "a. Affogato",
-      choiceB: "b. Ristretto",
-      choiceC: "c. Macchiato",
-      correctAnswer: "a"
-    },  
-  ];
+    {
+      questionE: "If a brewed espresso is over extracted what changes should be made to the beans?",
+        choiceA: "a. Should be allowed to rest longer after roasting before use ",
+        choiceB: "b. Should be ground finer",
+        choiceC: "c. Should be ground coarser",
+        correctAnswer: "c"
+      },
+    { 
+      questionE: "What is channeling?",
+        choiceA: "a. The beans used to brew coffee are inconsistent in size",
+        choiceB: "b. Water has found an easy way through the coffee cake before extraction",
+        choiceC: "c. The pressure of the espresso machine temporarily drops causing uneven extraction",
+        correctAnswer: "b"
+      },
+    {
+      questionE: "What is the ideal temperature to heat milk to for milk based espresso drinks?",
+        choiceA: "a. 55 to 60 degrees celcius",
+        choiceB: "b. 70 degrees celcius",
+        choiceC: "c. 60 to 65 degrees celcius",
+        correctAnswer: "c"
+      },  
+    ];
+
 
 // variables
 

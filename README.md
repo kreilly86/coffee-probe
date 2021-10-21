@@ -16,6 +16,7 @@ The quiz is made up of 3 sections of questions:
 <br>
 As a user I want to:
 <br>
+
   - Seamlessly navigate the quiz with intuitive navigation in place
   - Have a running score indicator to check my progress
   - Be challenged by the questions at each level
@@ -42,6 +43,7 @@ At the top of the screen there is a coffee bean icon which the user can click on
 
 #### LOGO
 <hr>
+<img src="assets/images/logo.png">
 <br>
 The logo was made using canva, and this particular template:
 <br>
@@ -108,16 +110,28 @@ Once the user has selected a level they are taken to the quiz page and the first
 
 #### DISPLAYING USER SCORES
 <hr>
+<br>
+Once the user has reached the end of whichever question level they have chosen they can click on a button at the button of the score tally to open up their final score display. I have kept this pop-up minimilistic, and included 4 different coffee related images depending on what score percentage they achieved. These range based on the user scoring 0-20%, 20%-50%, 50%-70%, and 70% and over.
+<br>
+<br>
+<img src="assets/images/result-button-sshot.png"> <img src="assets/images/10percent-sshot.png"> <img src="assets/images/30percent-sshot.png">
+<br>
+<br>
+<img src="assets/images/70percent-sshot.png">  <img src="assets/images/100percent-sshot.png">
+<br>
+<br>
 
 ### FEATURES FOR FUTURE INCLUSION
 <hr>
 <br>
 There are a lot of things I would have liked to include in the quiz if I had to do it again. Some of these are as follows:
 <br>
+
 - A timer to limit the amount of time the user has to answer
-- Have the whole project run on one or two html pages, rather than have to link them all
+- Have the whole project run on one or two html pages, and one JavaScript page rather than having to link them all
 - Alerts to display when the user has answered incorrectly and what the correct answer is
-- An education section where the user can go to find further learnign resources
+- An education section where the user can go to find further learning resources
+- A personalised message by capturing the user's name input and displaying at the end when showing the user's score
 <br>
 <br>
 <hr>
@@ -141,7 +155,6 @@ Code Institute Love Maths Project:
 https://github.com/Code-Institute-Org/love-maths
 
 <br>
-<br>
 * A big thank you to fellow Code Institute student Dave Horrocks for advice and help with progress bar code *
 <hr>
 
@@ -159,13 +172,30 @@ https://www.youtube.com/watch?v=49pYIMygIcU *multi choice quiz*
 <hr>
 <br>
 
+Quiz created by myself with some info taken from 
+[Code Black Coffee](https://codeblackcoffee.com.au/blogs/)
+<br>
+
 [Contrast Grid](https://color.adobe.com/create/color-wheel)
+<br>
+<br>
+I used Contrast Grid to test accesibility for my colour scheme.
+<br>
+<img src="assets/images/contrast-grid-sshot.png">
 
 [Coolors.co](https://coolors.co/114b5f-e0eec6-3aafb9-c2a83e-9f9aa4)
+<br>
+I used Coolors.co to create a colour palette for the quiz. I wanted something simple, yet still interesting. The colours compliment a simple, minamilist design as to not draw attention away from the quiz content and features.
+<br>
+<br>
+<img src="assets/images/coolors-sshot.png">'
+<br>
 
-[Favicon-converter] https://favicon.io/favicon-converter/
+[Favicon-converter] (https://favicon.io/favicon-converter/)
 
- Flaticon Icons *For use in the quiz results pop-up*
+ Flaticon Icons 
+ <br>
+ *For use in the quiz results pop-up*
 
    <div>Icons made by <a href="https://www.flaticon.com/authors/amethystdesign" title="AmethystDesign">AmethystDesign</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
