@@ -138,7 +138,7 @@ body {
     color: #114B5F;
 }
 
-.levels a {
+.levels button {
     font-family: "Poppins", sans-serif;
     color: black;
     margin-top: 0px;
@@ -153,32 +153,32 @@ body {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.easy {
+#easy {
     background-color: #C2A83E;
     color: black;
 }
 
-.easy:hover {
+#easy:hover {
     background-color: #C2A83E;
     color: white;
 }
 
-.intermediate {
+#intermediate {
     background-color: #3AAFB9;
     color: black;
 }
 
-.intermediate:hover {
+#intermediate:hover {
     background-color: #3AAFB9;
     color: white;
 }
 
-.expert {
+#expert {
     background-color: #9F9AA4;
     color: black;
 }
 
-.expert:hover {
+#expert:hover {
     background-color: #9f9aa4;
     color: white;
 }

@@ -5,18 +5,13 @@ function openForm() {
 }
 
 // Quiz section
-// variables
-
 const quiz = document.getElementById("quiz");
 const question = document.getElementById("question");
 
 const choiceA = document.getElementById('a');
 const choiceB = document.getElementById('b');
 const choiceC = document.getElementById('c');
-const lastQuestion = questions.length -1;
 
-let runningQuestion = 0;
-let score = 0;
 let correctScore = 0;
 let incorrectScore = 0;
 
@@ -95,15 +90,23 @@ let questions = [
   },  
 ];
 
+// variables
+
+const lastQuestion = questions.length -1;
+let runningQuestion = 0;
+let score = 0;
+
 // function to render a question
 
-function renderQuestion() {
+function renderQuestion () {
     let q = questions[runningQuestion];
     question.innerHTML = "<p>" + q.question + "</p>";
     choiceA.innerHTML = q.choiceA;
     choiceB.innerHTML = q.choiceB;
     choiceC.innerHTML = q.choiceC;
 }
+
+renderQuestion();
 
 // Function to check the answer
 
@@ -117,12 +120,12 @@ function checkAnswer(answer) {
         answerIsIncorrect();  
       }
         if (runningQuestion <= lastQuestion) {    
+         runningQuestion++; 
          increment(); 
-         runningQuestion++;
          renderQuestion(); 
-         // end of quiz show score
+        // end of quiz show score
        } else {
-         scoreRender();
+         endQuiz();
        }
    }
       
@@ -148,13 +151,12 @@ function increment() {
   progressTextValue.innerText = String(Number(progressTextValue.innerText) + 10);
 }
 
-
 // Display results
 
 const scoreDiv = document.getElementById("score");
 
  function scoreRender() {
-    resultsContainer.style.display = "block";
+    document.getElementById('resultsContainer').style.display = "block";
     let scorePercent = Math.round(100* score/ questions.length);
     let img = (scorePercent => 80) ? "img/aeropress.png" :
               (scorePercent => 60) ? "img/bar.png" :
@@ -164,5 +166,8 @@ const scoreDiv = document.getElementById("score");
           scoreDiv.innerHTML +="<p>" + scorePercent + "%</p>";
  }
 
+ function endQuiz() {
+   
+ }
    
  
