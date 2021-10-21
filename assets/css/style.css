@@ -232,6 +232,24 @@ body {
     font-size: 1.5rem;
 }
 
+#questionI {
+    padding: 5px;
+    color: #114B5F;
+    font-family: "Major Mono Display", sans-serif;
+    font-weight: 800;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+#questionE {
+    padding: 5px;
+    color: #114B5F;
+    font-family: "Major Mono Display", sans-serif;
+    font-weight: 800;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
 .answer {
     color: black;
     margin: 25px;
@@ -359,7 +377,4 @@ body {
         height: 50%;
         border: 3px solid #f1f1f1;
     }
-    
-
-
 }
