@@ -7,15 +7,11 @@ function openForm() {
 }
 
 // quiz section
-const quiz = document.getElementById("quiz");
 const question = document.getElementById("question");
 
 const choiceA = document.getElementById('a');
 const choiceB = document.getElementById('b');
 const choiceC = document.getElementById('c');
-
-let correctScore = 0;
-let incorrectScore = 0;
 
 // Questions - Easy
 
@@ -126,10 +122,7 @@ function checkAnswer(answer) {
     runningQuestion++;
     increment();
     renderQuestion();
-    // end of quiz 
-  } else {
-    endQuiz();
-  }
+    }
 }
 
 // Gets the current score from the DOM and increment by 1

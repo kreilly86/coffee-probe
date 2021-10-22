@@ -264,9 +264,10 @@ As I worked through the challenges of the progress bar and other minor mistakes 
 
  - I used Lighthouse to check accessibility and the site passed:
  <br>
+ <br>
  <img src="assets/images/lighthouse-sshot.png">
  <br>
- <BR>
+ <br>
 
  - I checked the project with Devtools and found these errors:
  <br>

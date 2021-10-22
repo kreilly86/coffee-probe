@@ -1,13 +1,9 @@
 // Quiz section
-const quiz = document.getElementById("quiz");
 const questionI = document.getElementById("questionE");
 
 const choiceA = document.getElementById('a');
 const choiceB = document.getElementById('b');
 const choiceC = document.getElementById('c');
-
-let correctScore = 0;
-let incorrectScore = 0;
 
 // Questions- Expert
 
@@ -118,9 +114,6 @@ function checkAnswer(answer) {
         runningQuestion++;
         increment();
         renderQuestion();
-        // end of quiz
-    } else {
-        endQuiz();
     }
 }
 
