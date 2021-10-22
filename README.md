@@ -261,19 +261,7 @@ As I worked through the challenges of the progress bar and other minor mistakes 
  ### TESTING
  <hr>
  <br>
- I ran the JavaScript through JSHint and found some unused variables as follows:
  <br>
- <br>
- <img src="assets/images/jshint1-sshot.png">
- <br>
- <br>
- From this I removed unused variables, and left the functions needed to run the quiz. Two of the functions named rely on the user to click a button to run, and have onClick attributes in the HTML code. These are openForm() and scoreRender().
- <br>
- <br>
- <img src="assets/images/jshint2-sshot.png">
- <br>
- <br>
-
  - I used Lighthouse to check accessibility and the site passed:
  <br>
  <br>
@@ -309,6 +297,22 @@ I used https://extendsclass.com/javascript-fiddle.html to test my JavaScript Fil
 <img src="assets/images/javascript-fiddlesshot.png">
 <br>
 <br>
+
+#### JSHint
+<br>
+<br>
+ I ran the JavaScript through JSHint and found some unused variables as follows:
+ <br>
+ <br>
+ <img src="assets/images/jshint1-sshot.png">
+ <br>
+ <br>
+ From this I removed unused variables, and left the functions needed to run the quiz. Two of the functions named rely on the user to click a button to run, and have onClick attributes in the HTML code. These are openForm() and scoreRender().
+ <br>
+ <br>
+ <img src="assets/images/jshint2-sshot.png">
+ <br>
+ <br>
 
 ### DEPLOYMENT
 <hr>
