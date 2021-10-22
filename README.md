@@ -242,12 +242,12 @@ I used Coolors.co to create a colour palette for the quiz. I wanted something si
  Another attempt I tried was also fruitless:
  <br>
  <br>
- <img src="progress-bar-sshot1.png">
+ <img src="assets/images/progress-bar-sshot1.png">
  <br>
  Throughout the process I realised I should have stopped to take the code line by line and console log values to see if they were giving the type of value I needed in order to make a working function. As I look back now I can see some values were being return as Nan, or undefined so I was unable to use them. Thanks to a fellow student Dave Horrocks I was able to find the solution.
 <br>
 <br>
-<img src="progress-bar-final.png">
+<img src="assets/images/progress-bar-finalsshot.png">
 <br>
 <br>
 
@@ -268,7 +268,10 @@ As I worked through the challenges of the progress bar and other minor mistakes 
  <br>
  <BR>
 
- - I checked the project with Devtools and no project related errors were found.
+ - I checked the project with Devtools and found these errors:
+ <br>
+ <br>
+ <img src="assets/images/devtools-sshot.png">
  <br>
  <br>
 
@@ -291,6 +294,20 @@ I used https://extendsclass.com/javascript-fiddle.html to test my JavaScript Fil
 <br>
 <br>
 <img src="assets/images/javascript-fiddlesshot.png">
+<br>
+<br>
+
+### DEPLOYMENT
+<hr>
+<br>
+The site was deployed to GitHub pages. The steps to deploy are the following:
+
+In the GitHub repository, navigate to the Settings tab and click on'Pages'. Select the Main Branch. Once the main branch has been selected, the page will automatically be refreshed with a detailed ribbon display to indicate the successful deployment.
+
+The live link can be found here:
+
+https://kreilly86.github.io/coffee-probe/
+
 
 
 
