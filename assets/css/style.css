@@ -29,7 +29,7 @@ body {
     margin-bottom: 15px;
 }
 
-.intro-container {
+#intro-container {
     flex: 3;
     font-family: "Major Mono Display", sans-serif;
     background-color: white;
@@ -95,7 +95,6 @@ body {
     outline: none;
 }
 
-/* Set a style for the submit button */
 .btn {
     background-color: #114b5f;
     color: white;
@@ -103,8 +102,7 @@ body {
     border: none;
     cursor: pointer;
     width: 70%;
-    margin: 25px 0 5px 25px;
-    opacity: 0.8;
+    margin: 10px 0 10px 0;
 }
 
 .levels>button {
@@ -331,7 +329,7 @@ body {
         width: 50vw;
         height: 375px;
         padding: 10px;
-        background-color: rgba(159, 154, 164, 0.9);
+        background-color: #9F9AA4;
         text-align: center;
     }
 

@@ -2,6 +2,8 @@
 
 function openForm() {
   document.getElementById("userInput").style.display = "block";
+  document.getElementById("begin-btn").style.display = "none";
+  document.getElementById("intro-container").style.display = "none";
 }
 
 // quiz section
@@ -100,7 +102,7 @@ let score = 0;
 
 function renderQuestion() {
   let q = questions[runningQuestion];
-  question.innerHTML = "<p>" + q.question + "</p>";
+  question.value = "<p>" + q.question + "</p>";
   choiceA.innerHTML = q.choiceA;
   choiceB.innerHTML = q.choiceB;
   choiceC.innerHTML = q.choiceC;

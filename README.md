@@ -148,11 +148,13 @@ There are a lot of things I would have liked to include in the quiz if I had to 
 <br>
 
 https://www.w3schools.com/css/css3_buttons.asp
-
-https://www.w3schools.com/tags/att_form_action.asp
-
+<br>
+<br>
 https://www.w3schools.com/howto/howto_js_popup_form.asp
-
+<br>
+I used this tutorial to make the user input pop-up at the beginning of the quiz.
+<br>
+<br>
 Code Institute Love Maths Project:
 <br>
 <br>
@@ -170,14 +172,14 @@ https://github.com/Code-Institute-Org/love-maths
 <hr>
 <br>
 
-https://www.youtube.com/watch?v=kjhsS4lNZ9o  *progress bar*
+https://www.youtube.com/watch?v=kjhsS4lNZ9o  *Progress bar*
 <br>
 <br>
-At first I used this progress bar video to code a progress bar, as it was almost what I wanted for my project. I got everything working, but the one issue was the actual progress value had to be inputted, rather it automatically updating as the quiz progressed. I tried different variations but could not get it to loop.
+At first I used this progress bar video to code a progress bar, as it was almost what I wanted for my project. I got everything working, but the one issue was the actual progress value had to be inputted, rather it automatically updating as the quiz progressed. I tried different variations but could not get it to increment the values as I had intended.
 <br>
 <img src="assets/images/progress-bar-sshot.png"> 
 
-https://www.youtube.com/watch?v=49pYIMygIcU *multi choice quiz*
+https://www.youtube.com/watch?v=49pYIMygIcU *Multi choice quiz*
 <br>
 <br>
 I used the multi choice quiz code to structure most of my quiz. There were additional features taught but I didn't think they would suit my project e.g. using images for the individual questions. I found the score results feature to be extremely helpful. With some tweeking to the math function I was able to run the function to display the users'score at the end of the quiz. The tutorial code was giving me percentage values less than 10% due to it being a different length quiz, I was able to fix this by multiplying the user score by 10 to get an accurate percentage result.
@@ -223,9 +225,38 @@ I used Coolors.co to create a colour palette for the quiz. I wanted something si
  ### BUGS AND ISSUES
  <hr>
  <br>
- 
 
- 
+ #### Progress Bar
+ <hr>
+ <br>
+ I tried lots of variations of code to try and get a working progress bar. My desired outcome was to have a bar that would increment by 10% after each questions (as the quiz is 10 questions long). Some resources I found in tutorials were helpful, but not quite the outcome I was trying to achieve. For example, this code only allowed me to set the value of the progress bar, but I could not find a solution to get it to increment the progress :
+ <br>
+ <img src="assets/images/progress-bar-sshot.png">
+ <br>
+ Another version I tried had even less functionailty:
+ <br>
+ <br>
+ <img src="assets/images/progress-bar-2sshot.png">
+ <br>
+ <br>
+ Another attempt I tried was also fruitless:
+ <br>
+ <br>
+ <img src="progress-bar-sshot1.png">
+ <br>
+ Throughout the process I realised I should have stopped to take the code line by line and console log values to see if they were giving the type of value I needed in order to make a working function. As I look back now I can see some values were being return as Nan, or undefined so I was unable to use them. Thanks to a fellow student Dave Horrocks I was able to find the solution.
+<br>
+<br>
+<img src="progress-bar-final.png">
+<br>
+<br>
+
+#### MULTIPLE JAVASCRIPT AND HTML FILES
+<hr>
+<br>
+As I worked through the challenges of the progress bar and other minor mistakes I realised I was running out of time to find a solution to having the quiz levels operate as I would like. Ideally once the user has selected a level all of the quiz could be run through one html file, and one JS script. I found the only solution at present was to create seperate JS script files and HTML files for the intermedite and expert levels and only making small changes to the element names to accomodate for this. The quiz is fully functional but I would like to improve on my skill base in using mre complex Javascript functions to perform multiple tasks.
+<br>
+<br>
 
  ### TESTING
  <hr>
@@ -238,6 +269,10 @@ I used Coolors.co to create a colour palette for the quiz. I wanted something si
  <BR>
 
  - I checked the project with Devtools and no project related errors were found.
+ <br>
+ <br>
+
+ - I have tested the site in Google Chrome, Microsoft Edge, on an android OnePlus6 phone, and an Iphone 7, and all are working as intended.
 
 ### VALIDATION
 <hr>
