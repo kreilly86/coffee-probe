@@ -102,7 +102,7 @@ let score = 0;
 
 function renderQuestion() {
   let q = questions[runningQuestion];
-  question.value = "<p>" + q.question + "</p>";
+  question.innerHTML = "<p>" + q.question + "</p>";
   choiceA.innerHTML = q.choiceA;
   choiceB.innerHTML = q.choiceB;
   choiceC.innerHTML = q.choiceC;
@@ -148,7 +148,7 @@ function answerIsIncorrect() {
 function increment() {
   let maxWidth = document.getElementById('progress-bar').offsetWidth;
   let currentWidth = document.getElementById('my-progress').offsetWidth;
-  let newWidth = currentWidth + maxWidth * .1;
+  let newWidth = currentWidth + maxWidth * '.1';
   document.getElementById('my-progress').style.width = `${newWidth}px`;
   let progressTextValue = document.getElementById('progress-text').children[0];
   progressTextValue.innerText = String(Number(progressTextValue.innerText) + 10);

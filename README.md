@@ -287,6 +287,10 @@ The CSS passed through the
 [WSC CSS Validation](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkreilly86.github.io%2Fcoffee-probe%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 <br>
 <br>
+I used https://extendsclass.com/javascript-fiddle.html to test my JavaScript File, and it came up with the following result:
+<br>
+<br>
+<img src="assets/images/javascript-fiddlesshot.png">
 
 
 
